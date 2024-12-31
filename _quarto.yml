@@ -1,0 +1,20 @@
+project:
+  type: website
+
+website:
+  title: "Aarushi Nema"
+  description: "A hub for showcasing my portfolio, AI and tech blogs, creative drawings, and podcast episodes that blend innovation with artistry."
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/aarushi-nema
+      - icon: linkedin
+        href: https://www.linkedin.com/in/aarushi-nema-64a006185/
+format:
+  html:
+    theme: darkly
+    css: styles.css
+
+
+
