@@ -10,8 +10,16 @@ website:
     pinned: true
     right:
       - about.qmd
+      - text: "Projects"
+        href: projects.qmd
       - text: "Blog"
-        href: index.qmd
+        href: blog.qmd
+      - text: "Design Portfolio"
+        href: design_portfolio.qmd
+      - text: "Art"
+        href: art.qmd
+      - text: "Podcast"
+        href: podcast.qmd
       - icon: github
         href: https://github.com/aarushi-nema
       - icon: linkedin

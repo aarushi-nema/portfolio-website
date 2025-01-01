@@ -3,15 +3,17 @@ page-layout: full
 title-block-banner: false
 ---
 
-![](./images/homepage_img.png)
+![](./images/homepage_img.png){width=1600}
 
-## <img src="https://github.com/user-attachments/assets/85168862-3988-4832-bf64-5b3bfa22b220" alt="stars" width="20px" height="20px"/> About me
-Hello, World! I'm Aarushi, a final year student @ Nanyang Technological University, Singapore where I am majoring in Data Science and Artificial Intelligence. I am passionate about leveraging Data and AI to solve challenging problems, create meaningful value, and design solutions that leave a lasting impact. I also have a keen interest in creating intuitive UI/UX designs, where functionality meets creativity.
+## About me
+Hello, World! <img src="./images/cropped_parrot.gif" alt="stars" width="28px" height="21px"/><br>
+I'm Aarushi, a final year student @ Nanyang Technological University, Singapore where I am majoring in Data Science and Artificial Intelligence. I am passionate about leveraging Data and AI to solve challenging problems, create meaningful value, and design solutions that leave a lasting impact. I also have a keen interest in creating intuitive UI/UX designs, where functionality meets creativity. I throuoghly emjoy working at the cusp of people and technology. 
 
-In my free time, I enjoy drawing, cooking, and working out.
+My interest in tech started back in 2012 when I watched a host of sci-fi movies. Fast-forward to today, and I’ve had the privilege of working at a semiconductor company, an automobile company and a student-led IT committee. 
+
+In my free time, I enjoy drawing 🎨, cooking 👩‍🍳, and working out 🏋️‍♀️.
 
 ## <img src="https://github.com/user-attachments/assets/85168862-3988-4832-bf64-5b3bfa22b220" alt="stars" width="20px" height="20px"/> Work Experience:
-
 
 
 ## <img src="https://github.com/user-attachments/assets/85168862-3988-4832-bf64-5b3bfa22b220" alt="stars" width="20px" height="20px"/> Tools of the Trade:
