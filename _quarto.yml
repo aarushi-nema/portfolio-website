@@ -9,7 +9,6 @@ website:
     search: true
     pinned: true
     right:
-      - about.qmd
       - text: "Projects"
         href: projects.qmd
       - text: "Blog"

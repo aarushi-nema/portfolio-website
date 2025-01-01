@@ -1,14 +1,25 @@
 ---
+title: "Art Gallery"
 page-layout: full
 ---
 
 ::: {style="display: grid;grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));grid-gap: 1em;"}
 
+![](./images/art/sketch_53.jpg){group="my-gallery"}
+
+![](./images/art/sketch_54.jpg){group="my-gallery"}
+
+![](./images/art/sketch_55.jpg){group="my-gallery"}
+
+![](./images/art/sketch_56.jpg){group="my-gallery"}
+
+![](./images/art/sketch_57.jpg){group="my-gallery"}
+
+![](./images/art/sketch_58.jpg){group="my-gallery"}
+
+![](./images/art/sketch_59.jpg){group="my-gallery"}
+
 ![](./images/art/sketch_01.webp){group="my-gallery"}
-
-![](./images/art/sketch_02.webp){group="my-gallery"}
-
-![](./images/art/sketch_03.webp){group="my-gallery"}
 
 ![](./images/art/sketch_04.webp){group="my-gallery"}
 
@@ -108,5 +119,8 @@ page-layout: full
 
 ![](./images/art/sketch_52.webp){group="my-gallery"}
 
+![](./images/art/sketch_02.webp){group="my-gallery"}
+
+![](./images/art/sketch_03.webp){group="my-gallery"}
 
 :::
