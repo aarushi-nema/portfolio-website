@@ -1,0 +1,58 @@
+[
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Aarushi Nema",
+    "section": "About me",
+    "text": "About me\nHello, World!  I’m Aarushi, a final year student @ Nanyang Technological University, Singapore where I am majoring in Data Science and Artificial Intelligence. I am passionate about leveraging Data and AI to solve challenging problems, create meaningful value, and design solutions that leave a lasting impact. I also have a keen interest in creating intuitive UI/UX designs, where functionality meets creativity. I throuoghly emjoy working at the cusp of people and technology.\nMy interest in tech started back in 2012 when I watched a host of sci-fi movies. Fast-forward to today, and I’ve had the privilege of working at a semiconductor company, an automobile company and a student-led IT committee.\nIn my free time, I enjoy drawing 🎨, cooking 👩‍🍳, and working out 🏋️‍♀️."
+  },
+  {
+    "objectID": "index.html#work-experience",
+    "href": "index.html#work-experience",
+    "title": "Aarushi Nema",
+    "section": " Work Experience:",
+    "text": "Work Experience:"
+  },
+  {
+    "objectID": "index.html#tools-of-the-trade",
+    "href": "index.html#tools-of-the-trade",
+    "title": "Aarushi Nema",
+    "section": " Tools of the Trade:",
+    "text": "Tools of the Trade:"
+  },
+  {
+    "objectID": "index.html#contact",
+    "href": "index.html#contact",
+    "title": "Aarushi Nema",
+    "section": " Contact",
+    "text": "Contact\nWould like to have a chat? Click here to send me an e-mail.\nI am also happy to connect on different social and professional platforms. Click the badges below to see my profile."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Aarushi Nema",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nDec 31, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nDec 28, 2024\n\n\nTristan O’Malley\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this blog"
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  }
+]
