@@ -37,7 +37,5 @@ format:
     theme: journal
     css: styles.css
     page-layout: article
-    grid:
-      margin-width: 450px
-      body-width: 600px
+
     

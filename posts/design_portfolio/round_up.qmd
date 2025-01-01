@@ -3,6 +3,7 @@ title: "RoundUp: Finance Tracking App"
 author: "Aarushi Nema"
 date: "2023-02-22"
 categories: [Design Portfolio]
+type: "design_portfolio"
 ---
 This project was part of my university course “Venturing into Entrepreneurship.” This was a group project so shout out to my wonderful team members: Prajwal Jagadeesh Kori, Subramania Suresh Sabarish, Phang Jin Jiat Matthias, and Mahir Murtaza, without whom this project wouldn’t have been such a wonderful success! My main role in the project was UI/UX design and technical feasibility analysis.
 
