@@ -807,3 +807,4 @@ h2{
 @media (prefers-reduced-motion: reduce){
   .hero-left, .hero-right { transition: none !important; opacity:1 !important; transform: none !important; filter: none !important; }
 }
+/* Force refresh Fri Sep 19 22:29:00 +08 2025 */
