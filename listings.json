@@ -1,15 +1,25 @@
 [
   {
-    "listing": "/design_portfolio.html",
+    "listing": "/blog.html",
     "items": [
+      "/posts/machine_learning_projects/AgentCore.html",
+      "/posts/machine_learning_projects/Breast Cancer SVM Classifier .html",
+      "/posts/machine_learning_projects/index.html",
       "/posts/design_portfolio/round_up.html"
     ]
   },
   {
-    "listing": "/blog.html",
+    "listing": "/projects.html",
     "items": [
+      "/posts/machine_learning_projects/AgentCore.html",
       "/posts/machine_learning_projects/Breast Cancer SVM Classifier .html",
       "/posts/machine_learning_projects/index.html",
+      "/posts/design_portfolio/round_up.html"
+    ]
+  },
+  {
+    "listing": "/design_portfolio.html",
+    "items": [
       "/posts/design_portfolio/round_up.html"
     ]
   }

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>projects – Aarushi Nema</title>
+<title>index_old – Aarushi Nema</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -69,65 +67,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -152,7 +92,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -184,150 +124,89 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVzaWduJTIwUG9ydGZvbGlv">Design Portfolio <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5n">Machine Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5nJTIwUHJvamVjdHM=">Machine Learning Projects <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
+<p><img src="./images/homepage_img.png" class="img-fluid" width="1600"></p>
+<section id="about-me" class="level2">
+<h2 class="anchored" data-anchor-id="about-me">About me</h2>
+<p>Hello, World! <img src="./images/cropped_parrot.gif" alt="stars" width="28px" height="21px"><br> I’m Aarushi, a final year student @ Nanyang Technological University, Singapore where I am majoring in Data Science and Artificial Intelligence. I am passionate about leveraging Data and AI to solve challenging problems, create meaningful value, and design solutions that leave a lasting impact. I also have a keen interest in creating intuitive UI/UX designs, where functionality meets creativity. I throuoghly emjoy working at the cusp of people and technology.</p>
+<p>My interest in tech started back in 2012 when I watched a host of sci-fi movies. Fast-forward to today, and I’ve had the privilege of working at a semiconductor company, an automobile company and a student-led IT committee.</p>
+<p>In my free time, I enjoy drawing 🎨, cooking 👩‍🍳, and working out 🏋️‍♀️.</p>
+</section>
+<section id="work-experience" class="level2">
+<h2 class="anchored" data-anchor-id="work-experience"><img src="https://github.com/user-attachments/assets/85168862-3988-4832-bf64-5b3bfa22b220" alt="stars" width="20px" height="20px"> Work Experience:</h2>
+<div class="resume-actions">
+  <a class="btn" href="./resume.pdf" download="">Download Resume (PDF)</a>
+</div>
 
+<div class="timeline" id="experience-timeline">
 
+  <!-- Item -->
+  <article class="timeline-item" style="--d:0s">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+      <h4 class="anchored">Data Platform Intern — Hyundai Motor Group Innovation Centre Singapore</h4>
+      <time>May 2024 — Aug 2024</time>
+      <ul>
+        <li>Engineered migration pipelines (PostgreSQL/Tibero → Hadoop) with Python, PySpark, Airflow.</li>
+        <li>Built REST APIs (Flask + PySpark) for lake querying across formats.</li>
+        <li>Implemented cross-DB sync into PostgreSQL using PySpark.</li>
+      </ul>
+      <div class="tags">
+        <span class="tag">Python</span><span class="tag">PySpark</span><span class="tag">Airflow</span>
+      </div>
+    </div>
+  </article>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5n" data-listing-date-sort="1758038400000" data-listing-file-modified-sort="1758273250015" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="970">
-<div class="thumbnail"><a href="./posts/machine_learning_projects/AgentCore.html" class="no-external">
-
-<p class="card-img-top"><img src="images/machine_learning_projects/agent_core/AgentCore-icon3.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/machine_learning_projects/AgentCore.html" class="no-external">Building a Customer Support Agent Using Amazon BedRock AgentCore</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
+  <!-- Item -->
+  <article class="timeline-item" style="--d:.06s">
+    <span class="timeline-dot"></span>
+    <div class="timeline-content">
+      <h4 class="anchored">Software Development (Data App) Intern — Infineon Technologies</h4>
+      <time>May 2023 — Dec 2023</time>
+        <ul>
+          <li>Automated ETL to SQL (with Jenkins); built email notifier.</li>
+          <li>Centralized RPA (UiPath + Python) → 90% less manual effort.</li>
+          <li>Confluence chatbot (React, Flask, SQL) to speed tool lookup.</li>
+        </ul>
+      <div class="tags">
+        <span class="tag">RPA</span><span class="tag">Jenkins</span><span class="tag">Flask</span>
+      </div>
+    </div>
+  </article>
 
 </div>
-<div class="delink listing-description"><a href="./posts/machine_learning_projects/AgentCore.html" class="no-external">
-This project is part of the AWS Users Group Workshop on 17th September, 2025. The goal of the project is to build a comprehensive, production ready Customer Support Agent…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/machine_learning_projects/AgentCore.html" class="no-external">
-<div class="listing-date">
-Sep 17, 2025
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTIwUHJvamVjdHM=" data-listing-date-sort="1735574400000" data-listing-file-modified-sort="1757925490892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="612">
-<div class="thumbnail"><a href="./posts/machine_learning_projects/Breast Cancer SVM Classifier .html" class="no-external">
-
-<img loading="lazy" src="./posts/machine_learning_projects/image.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/machine_learning_projects/Breast Cancer SVM Classifier .html" class="no-external">Background:</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5nJTIwUHJvamVjdHM='); return false;">Machine Learning Projects</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/machine_learning_projects/Breast Cancer SVM Classifier .html" class="no-external">
+<script>
+  const timelineItems = document.querySelectorAll('.timeline-item');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  timelineItems.forEach((item) => observer.observe(item));
+</script>
+</section>
+<section id="tools-of-the-trade" class="level2">
+<h2 class="anchored" data-anchor-id="tools-of-the-trade"><img src="https://github.com/user-attachments/assets/85168862-3988-4832-bf64-5b3bfa22b220" alt="stars" width="20px" height="20px"> Tools of the Trade:</h2>
+<p><img src="http://img.shields.io/badge/Python-3776AB?style=flat-square&amp;logo=python&amp;logoColor=ffffff.png" class="img-fluid" alt="Python"> <img src="https://img.shields.io/badge/Pandas-244e71?style=flat-square&amp;logo=pandas&amp;logoColor=ffffff.png" class="img-fluid" alt="Pandas"> <img src="https://img.shields.io/badge/numpy-%23013243.svg?style=flat-square&amp;logo=numpy&amp;logoColor=white" class="img-fluid" alt="NumPy"> <img src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat-square&amp;logo=pytorch&amp;logoColor=white" class="img-fluid" alt="PyTorch"> <img src="https://img.shields.io/badge/scikit--learn-F06032.svg?style=flat-square&amp;logo=scikit-learn&amp;logoColor=white" class="img-fluid" alt="scikit-learn"> <img src="https://img.shields.io/badge/MySQL-%2307405e.svg?style=flat-square&amp;logo=mysql&amp;logoColor=white" class="img-fluid" alt="MySQL"> <img src="https://img.shields.io/badge/PostgreSQL-3d83be?style=flat-square&amp;logo=postgresql&amp;logoColor=ffffff.png" class="img-fluid" alt="PostgreSQL"> <img src="https://img.shields.io/badge/Apache%20Spark-FDEE21?style=flat-square&amp;logo=apachespark&amp;logoColor=black.png" class="img-fluid" alt="Spark"> <img src="https://img.shields.io/badge/Apache%20Hadoop-66CCFF?style=flat-square&amp;logo=apachehadoop&amp;logoColor=black.png" class="img-fluid" alt="Apache Hadoop"> <img src="https://img.shields.io/badge/React-%23007ACC?style=flat-square&amp;logo=react&amp;logoColor=white.png" class="img-fluid" alt="React"> <img src="https://img.shields.io/badge/react_native-%2320232a.svg?style=flat-square&amp;logo=react&amp;logoColor=%2361DAFB" class="img-fluid" alt="React Native"> <img src="https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&amp;logo=css3.png" class="img-fluid" alt="CSS3"> <img src="https://img.shields.io/badge/firebase-%234285F4.svg?style=flat-square&amp;logo=firebase" class="img-fluid" alt="Firebase"> <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat-square&amp;logo=mongodb&amp;logoColor=white" class="img-fluid" alt="MongoDB"> <img src="https://img.shields.io/badge/Nodejs-43853d?style=flat-square&amp;logo=node.js&amp;logoColor=white" class="img-fluid" alt="NodeJS"> <img src="https://img.shields.io/badge/Expressjs-43853d.svg?style=flat-square&amp;logo=express&amp;logoColor=white" class="img-fluid" alt="Express.js"> <img src="https://img.shields.io/badge/django-%23092E20.svg?style=flat-square&amp;logo=django&amp;logoColor=white" class="img-fluid" alt="Django"> <img src="https://img.shields.io/badge/-JavaScript-yellow?style=flat-square&amp;logo=javascript&amp;logoColor=white.png" class="img-fluid" alt="JavaScript"> <img src="https://img.shields.io/badge/-Prettier-E7A93E?style=flat-square&amp;logo=prettier&amp;logoColor=white.png" class="img-fluid" alt="Prettier"> <img src="https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&amp;logo=html5&amp;logoColor=ffffff.png" class="img-fluid" alt="HTML5"> <img src="https://img.shields.io/badge/-Git-F05032?style=flat-square&amp;logo=git&amp;logoColor=white.png" class="img-fluid" alt="Git"> <img src="https://img.shields.io/badge/flask-%23000.svg?style=flat-square&amp;logo=flask&amp;logoColor=white" class="img-fluid" alt="Flask"> <img src="https://img.shields.io/badge/bash_script-%23121011.svg?style=flat-square&amp;logo=gnu-bash&amp;logoColor=white" class="img-fluid" alt="Bash Script"> <img src="https://img.shields.io/badge/Apache%20Airflow-017CEE?style=flat-square&amp;logo=Apache%20Airflow&amp;logoColor=white.png" class="img-fluid" alt="Apache Airflow"> <img src="https://img.shields.io/badge/jenkins-%232C5263.svg?style=flat-square&amp;logo=jenkins&amp;logoColor=white" class="img-fluid" alt="Jenkins"></p>
+</section>
+<section id="contact" class="level2">
+<h2 class="anchored" data-anchor-id="contact"><img src="https://github.com/user-attachments/assets/85168862-3988-4832-bf64-5b3bfa22b220" alt="stars" width="20px" height="20px"> Contact</h2>
+<p>Would like to have a chat? <a href="mailto:aarushi.nema02@gmail.com">Click here</a> to send me an e-mail.</p>
+<p>I am also happy to connect on different social and professional platforms. Click the badges below to see my profile. <a href="https://www.linkedin.com/in/aarushi-nema-64a006185/"><img src="https://img.shields.io/badge/-Aarushi%20Nema-0077B5?style=flat-square&amp;logo=Linkedin&amp;logoColor=white&amp;link=https://www.linkedin.com/in/aarushi-nema-64a006185/.png" class="img-fluid" alt="LinkedIn"></a> <a href="mailto:aarushi.nema02@gmail.com"><img src="https://img.shields.io/badge/-aarushi.nema02@gmail.com-red?style=flat-square&amp;logo=gmail&amp;logoColor=white" class="img-fluid" alt="Email"></a> <a href="https://github.com/aarushi-nema"><img src="https://img.shields.io/github/followers/aarushi-nema?style=social&amp;label=Follow.png" class="img-fluid" alt="GitHub"></a></p>
 
 
+</section>
 
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/machine_learning_projects/Breast Cancer SVM Classifier .html" class="no-external">
-<div class="listing-date">
-Dec 31, 2024
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="bmV3cyUyQ2NvZGUlMkNhbmFseXNpcw==" data-listing-date-sort="1735574400000" data-listing-file-modified-sort="1757925490892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<div class="thumbnail"><a href="./posts/machine_learning_projects/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/machine_learning_projects/image.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/machine_learning_projects/index.html" class="no-external">Post With Code</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">analysis</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/machine_learning_projects/index.html" class="no-external">
-This is a post with executable code.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/machine_learning_projects/index.html" class="no-external">
-<div class="listing-date">
-Dec 31, 2024
-</div>
-<div class="listing-author">
-Harlow Malloc
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="RGVzaWduJTIwUG9ydGZvbGlv" data-listing-date-sort="1676995200000" data-listing-file-modified-sort="1757925490891" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="223">
-<div class="thumbnail"><a href="./posts/design_portfolio/round_up.html" class="no-external">
-
-<p class="card-img-top"><img src="images/design_portfolio/round_up/img_01.webp"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/design_portfolio/round_up.html" class="no-external">RoundUp: Finance Tracking App</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGVzaWduJTIwUG9ydGZvbGlv'); return false;">Design Portfolio</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/design_portfolio/round_up.html" class="no-external">
-This project was part of my university course “Venturing into Entrepreneurship.” This was a group project so shout out to my wonderful team members: Prajwal Jagadeesh Kori…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/design_portfolio/round_up.html" class="no-external">
-<div class="listing-date">
-Feb 22, 2023
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

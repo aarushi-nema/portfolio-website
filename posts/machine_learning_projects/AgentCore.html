@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Aarushi Nema">
+<meta name="dcterms.date" content="2025-09-17">
 
-<title>projects – Aarushi Nema</title>
+<title>Building a Customer Support Agent Using Amazon BedRock AgentCore – Aarushi Nema</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,25 +25,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-710753787207b25228f8cf56d22a49c7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-710753787207b25228f8cf56d22a49c7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,79 +69,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Aarushi Nema</span>
     </a>
   </div>
@@ -152,15 +94,15 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./design_portfolio.html"> 
+    <a class="nav-link" href="../../design_portfolio.html"> 
 <span class="menu-text">Design Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./art.html"> 
+    <a class="nav-link" href="../../art.html"> 
 <span class="menu-text">Art</span></a>
   </li>  
   <li class="nav-item compact">
@@ -181,153 +123,219 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Building a Customer Support Agent Using Amazon BedRock AgentCore</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">Machine Learning</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Aarushi Nema </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">September 17, 2025</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="YW5hbHlzaXM=">analysis <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29kZQ==">code <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVzaWduJTIwUG9ydGZvbGlv">Design Portfolio <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5n">Machine Learning <span class="quarto-category-count">(1)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5nJTIwUHJvamVjdHM=">Machine Learning Projects <span class="quarto-category-count">(1)</span></div><div class="category" data-category="bmV3cw==">news <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
 
 
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TWFjaGluZSUyMExlYXJuaW5n" data-listing-date-sort="1758038400000" data-listing-file-modified-sort="1758273250015" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="970">
-<div class="thumbnail"><a href="./posts/machine_learning_projects/AgentCore.html" class="no-external">
-
-<p class="card-img-top"><img src="images/machine_learning_projects/agent_core/AgentCore-icon3.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/machine_learning_projects/AgentCore.html" class="no-external">Building a Customer Support Agent Using Amazon BedRock AgentCore</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
-
+<p><img src="../../images/machine_learning_projects/agent_core/AgentCore-icon3.png" class="img-fluid"></p>
+<section id="project-goal" class="level2">
+<h2 class="anchored" data-anchor-id="project-goal">Project Goal</h2>
+<p>This project is part of the AWS Users Group Workshop on 17th September, 2025. The goal of the project is to build a comprehensive, production ready Customer Support Agent using Amazon BedRock AgentCore.</p>
+<section id="business-scenario" class="level3">
+<h3 class="anchored" data-anchor-id="business-scenario">Business Scenario</h3>
+<p>You work for TechCorp, an e-commerce company that receives hundreds of customer support requests daily.</p>
+Customers contact support for various reasons:
+<ul>
+<li>
+Product Information: Getting specifications, pricing, and availability details
+</li>
+<li>
+Policy Questions: Understanding return policies, shipping costs, and business hours
+</li>
+</ul>
+<p>Currently, your support team spends significant time on repetitive tasks, leading to longer wait times and higher operational costs. You need an AI solution that can handle routine inquiries while escalating complex cases to human agents.</p>
+</section>
+</section>
+<section id="concepts-to-know" class="level2">
+<h2 class="anchored" data-anchor-id="concepts-to-know">Concepts to know</h2>
+<section id="amazon-bedrock-agentcore" class="level4">
+<h4 class="anchored" data-anchor-id="amazon-bedrock-agentcore"><a href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/what-is-bedrock-agentcore.html">Amazon Bedrock AgentCore</a></h4>
+<p>A fully managed service that enables you to deploy and operate highly capable AI agents securely at scale. AgentCore services can be used together or independently and work with any framework including Strands Agents, LangGraph, CrewAI, and LlamaIndex, as well as any foundation model in or outside of Amazon Bedrock, giving you the ultimate flexibility. It serves developers and enterprises who need 1) robust, secure, and scalable infrastructure to support dynamic execution paths at runtime, 2) controls to monitor behavior, 3) powerful tools to enhance agents, and 4) the flexibility to adapt as the landscape evolves.</p>
+</section>
+<section id="model-context-protocol-mcp" class="level4">
+<h4 class="anchored" data-anchor-id="model-context-protocol-mcp"><a href="https://modelcontextprotocol.io/about">Model Context Protocol (MCP)</a></h4>
+<p>An open-spourced standard for connecting AI applications to external systems. Using MCP, AI applications like Claude or ChatGPT can connect to data sources (e.g.&nbsp;local files, databases), tools (e.g.&nbsp;search engines, calculators) and workflows (e.g.&nbsp;specialized prompts)—enabling them to access key information and perform tasks. Think of MCP like a USB-C port for AI applications. Just as USB-C provides a standardized way to connect electronic devices, MCP provides a standardized way to connect AI applications to external systems. Another standardized protocol is called Agent2Agent (A2A).</p>
+</section>
+<section id="strands-agent" class="level4">
+<h4 class="anchored" data-anchor-id="strands-agent"><a href="https://strandsagents.com/latest/documentation/docs/">Strands Agent</a></h4>
+<p>Strands Agents is a simple-to-use, code-first framework for building agents. With Strands, developers can simply define a prompt and a list of tools in code to build an agent, then test it locally and deploy it to the cloud. Like the two strands of DNA, Strands connects two core pieces of the agent together: the model and the tools. Strands plans the agent’s next steps and executes tools using the advanced reasoning capabilities of models. For more complex agent use cases, developers can customize their agent’s behavior in Strands. For example, you can specify how tools are selected, customize how context is managed, choose where session state and memory are stored, and build multi-agent applications. Strands can run anywhere and can support any model with reasoning and tool use capabilities, including models in Amazon Bedrock, Anthropic, Ollama, Meta, and other providers through LiteLLM.</p>
+</section>
+</section>
+<section id="architecture-overview" class="level2">
+<h2 class="anchored" data-anchor-id="architecture-overview">Architecture Overview</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/machine_learning_projects/agent_core/architecture.png" class="img-fluid figure-img"></p>
+<figcaption>Architecture Diagram</figcaption>
+</figure>
 </div>
-<div class="delink listing-description"><a href="./posts/machine_learning_projects/AgentCore.html" class="no-external">
-This project is part of the AWS Users Group Workshop on 17th September, 2025. The goal of the project is to build a comprehensive, production ready Customer Support Agent…
-</a></div>
+</section>
+<section id="lab-1" class="level2">
+<h2 class="anchored" data-anchor-id="lab-1">Lab 1</h2>
+<p>In this lab, we will build a basic Customer Support Agent prototype using Strands Agents. This agent will have the following local tools available: <br><a href="../../code_files/aws_agentcore/lab-01-create-an-agent.html">Jupyter Notebook</a></p>
+<div style="display: flex; justify-content: center; margin-top: 1rem; margin-bottom: 1rem;">
+<table class="table-center">
+<thead>
+<tr>
+<th>
+Tool Function
+</th>
+<th>
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<code>get_return_policy()</code>
+</td>
+<td>
+Get return policy for specific products
+</td>
+</tr>
+<tr>
+<td>
+<code>get_product_info()</code>
+</td>
+<td>
+Get product information
+</td>
+</tr>
+<tr>
+<td>
+<code>web_search()</code>
+</td>
+<td>
+Search web for updated product information
+</td>
+</tr>
+</tbody>
+</table>
 </div>
-<div class="metadata">
-<a href="./posts/machine_learning_projects/AgentCore.html" class="no-external">
-<div class="listing-date">
-Sep 17, 2025
+The main goal of this lab is to:
+<ul>
+<li>
+Create tools using the <span class="citation" data-cites="tool">@tool</span> decorator
+</li>
+<li>
+Initialize a Strands Agent with model and tools
+</li>
+<li>
+Test Agent locally in a Jupyter Notebook
+</li>
+<ul>
+<section id="architecture-for-lab-1" class="level4">
+<h4 class="anchored" data-anchor-id="architecture-for-lab-1">Architecture for Lab 1</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/machine_learning_projects/agent_core/lab1_architecture.png" class="img-fluid figure-img"></p>
+<figcaption>Lab 1 Architecture Diagram</figcaption>
+</figure>
 </div>
-<div class="listing-author">
-Aarushi Nema
+</section>
+<section id="step-1-create-customer-support-tools" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-create-customer-support-tools">Step 1: Create Customer Support Tools</h4>
+<p>To provide more capabilities to the Agent, we can build specialized functions that can interact with external systems and data sources. Each tool represents a specific capability that allows the agent to take actions in the real world, from looking up orders to checking policies.</p>
+</section>
+</ul></ul></section>
+<section id="lab-2" class="level2">
+<h2 class="anchored" data-anchor-id="lab-2">Lab 2</h2>
+This lab focuses on enhancing an agent with memory. The reality for most AI agents today: Every conversation starts from zero, creating:
+<ul>
+<li>
+Frustrated customers who must repeat their information repeatedly
+</li>
+<li>
+Inefficient support that cannot build on previous interactions
+</li>
+<li>
+Lost opportunities to provide personalized, proactive service
+</li>
+<li>
+Poor customer satisfaction due to impersonal, generic responses
+</li>
+</ul>
+<a href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory-getting-started.html">Amazon BedRock AgentCore Memory</a> addresses this limitation by providing a managed service that enables AI agents to maintain context over time, remember important facts, and deliver consistent, personalized experiences. AgentCore Memory operates on two levels:
+<ul>
+<li>
+Short-Term Memory: Immediate conversation context and session-based information that provides continuity within a single interaction or closely related sessions.
+</li>
+<li>
+Long-Term Memory: Persistent information extracted and stored across multiple conversations, including facts, preferences, and summaries that enable personalized experiences over time.
+</li>
+</ul>
+In this lab, you’ll upgrade your Lab 1 prototype to deliver exceptional customer experiences through intelligent memory. Our agent will evolve from a forgetful prototype to a customer-aware assistant that:
+<ol>
+<li>
+“Welcome back, Sarah!” - Instantly recognizes returning customers
+</li>
+<li>
+“I remember you prefer email updates” - Recalls individual preferences automatically
+</li>
+<li>
+“Following up on your laptop issue from last month” - Connects related conversations seamlessly
+</li>
+<li>
+“Based on your purchase history, here’s what I recommend” - Provides personalized suggestions
+</li>
+</ol>
+<section id="architecture-for-lab-2" class="level4">
+<h4 class="anchored" data-anchor-id="architecture-for-lab-2">Architecture for Lab 2</h4>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../../images/machine_learning_projects/agent_core/lab2_architecture.png" class="img-fluid figure-img"></p>
+<figcaption>Lab 2 Architecture Diagram</figcaption>
+</figure>
 </div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTIwUHJvamVjdHM=" data-listing-date-sort="1735574400000" data-listing-file-modified-sort="1757925490892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="612">
-<div class="thumbnail"><a href="./posts/machine_learning_projects/Breast Cancer SVM Classifier .html" class="no-external">
+</section>
+<section id="step-1-create-agentcore-memory-resources" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-create-agentcore-memory-resources">Step 1: Create AgentCore Memory Resources</h4>
+<p>Our first step (This is a one-time setup) is to create a managed agentcore memory resource with multiple strategies (USER_PREFERENCE and SEMANTIC) to store comprehensive customer context, enabling persistent recall across conversations and balanced behavioral/factual insights.</p>
 
-<img loading="lazy" src="./posts/machine_learning_projects/image.jpg" class="thumbnail-image">
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/machine_learning_projects/Breast Cancer SVM Classifier .html" class="no-external">Background:</a>
-</h3>
-<div class="listing-categories">
+</section>
+</section>
 
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5nJTIwUHJvamVjdHM='); return false;">Machine Learning Projects</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/machine_learning_projects/Breast Cancer SVM Classifier .html" class="no-external">
-
-
-
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/machine_learning_projects/Breast Cancer SVM Classifier .html" class="no-external">
-<div class="listing-date">
-Dec 31, 2024
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="bmV3cyUyQ2NvZGUlMkNhbmFseXNpcw==" data-listing-date-sort="1735574400000" data-listing-file-modified-sort="1757925490892" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="7">
-<div class="thumbnail"><a href="./posts/machine_learning_projects/index.html" class="no-external">
-
-<img loading="lazy" src="./posts/machine_learning_projects/image.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/machine_learning_projects/index.html" class="no-external">Post With Code</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('bmV3cw=='); return false;">news</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kZQ=='); return false;">code</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YW5hbHlzaXM='); return false;">analysis</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/machine_learning_projects/index.html" class="no-external">
-This is a post with executable code.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/machine_learning_projects/index.html" class="no-external">
-<div class="listing-date">
-Dec 31, 2024
-</div>
-<div class="listing-author">
-Harlow Malloc
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="RGVzaWduJTIwUG9ydGZvbGlv" data-listing-date-sort="1676995200000" data-listing-file-modified-sort="1757925490891" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="223">
-<div class="thumbnail"><a href="./posts/design_portfolio/round_up.html" class="no-external">
-
-<p class="card-img-top"><img src="images/design_portfolio/round_up/img_01.webp"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/design_portfolio/round_up.html" class="no-external">RoundUp: Finance Tracking App</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGVzaWduJTIwUG9ydGZvbGlv'); return false;">Design Portfolio</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/design_portfolio/round_up.html" class="no-external">
-This project was part of my university course “Venturing into Entrepreneurship.” This was a group project so shout out to my wonderful team members: Prajwal Jagadeesh Kori…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/design_portfolio/round_up.html" class="no-external">
-<div class="listing-date">
-Feb 22, 2023
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
