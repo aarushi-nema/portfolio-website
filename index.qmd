@@ -1,56 +1,282 @@
 ---
 page-layout: full
-title-block-banner: false
+format:
+  html:
+    css: styles.css
+include-in-header:
+  - text: |
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 ---
 
-![](./images/homepage_img.png){width=1600}
+![](assets/me.jpeg){.avatar-xl .center alt="Aarushi Nema" fig-cap=""}
 
-## About me
-Hello, World! <img src="./images/cropped_parrot.gif" alt="stars" width="28px" height="21px"/><br>
-I'm Aarushi, a final year student @ Nanyang Technological University, Singapore where I am majoring in Data Science and Artificial Intelligence. I am passionate about leveraging Data and AI to solve challenging problems, create meaningful value, and design solutions that leave a lasting impact. I also have a keen interest in creating intuitive UI/UX designs, where functionality meets creativity. I throuoghly emjoy working at the cusp of people and technology. 
+<div class="hero-title">Hi! I am <span class="accent">Aarushi</span></div>
 
-My interest in tech started back in 2012 when I watched a host of sci-fi movies. Fast-forward to today, and I’ve had the privilege of working at a semiconductor company, an automobile company and a student-led IT committee. 
+<div class="center">
+  <span class="tagline-lg typewriter-line">
+    <span class="tw-text"></span><span class="caret"></span>
+  </span>
+  
+</div>
 
-In my free time, I enjoy drawing 🎨, cooking 👩‍🍳, and working out 🏋️‍♀️.
+<div class="blurb">
+I’m a Data Science & AI graduate from NTU Singapore with experience across data engineering, ML systems and scalable products. I enjoy bridging research with practical outcomes, and designing solutions that are simple and useful.
+</div>
 
-## <img src="https://github.com/user-attachments/assets/85168862-3988-4832-bf64-5b3bfa22b220" alt="stars" width="20px" height="20px"/> Work Experience:
+<div class="btn-row center">
+[Get In Touch](mailto:aarushi.nema02@gmail.com){.btn .btn-light .btn-sm}
+[Download CV](/data/nema_aarushi_resume.pdf){.btn .btn-outline-light .btn-sm}
+</div>
 
+## Tools of the Trade
 
-## <img src="https://github.com/user-attachments/assets/85168862-3988-4832-bf64-5b3bfa22b220" alt="stars" width="20px" height="20px"/> Tools of the Trade:
+```{=html}
+<div class="skills-layout">
+  <div class="skills-row">
+    <div class="skill-card">
+      <div class="skill-icon ai-icon"></div>
+      <h3>Data / AI</h3>
+      <p>I specialize in building scalable data pipelines and intelligent systems, combining machine learning, deep learning, and responsible AI research. My experience spans data migration with PySpark and Airflow at Hyundai, ETL automation and RPA development at Infineon, and academic projects including conversational recommender systems (PRICAI 2025 accepted), value-aligned LLMs (NeurIPS 2025 submission), and a top 3.2% Kaggle solution using LightGBM ensembles.</p>
+      <div class="tech-stack-label">Tech stack:</div>
+      <div class="tech-stack">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">PyTorch</span>
+        <span class="tech-pill">TensorFlow</span>
+        <span class="tech-pill">Scikit-Learn</span>
+        <span class="tech-pill">PySpark</span>
+        <span class="tech-pill">Hadoop</span>
+        <span class="tech-pill">SQL</span>
+        <span class="tech-pill">Tableau</span>
+        <span class="tech-pill">Pandas</span>
+      </div>
+    </div>
 
-![Python](http://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=ffffff)
-![Pandas](https://img.shields.io/badge/Pandas-244e71?style=flat-square&logo=pandas&logoColor=ffffff)
-![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat-square&logo=pytorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-F06032.svg?style=flat-square&logo=scikit-learn&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-%2307405e.svg?style=flat-square&logo=mysql&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-3d83be?style=flat-square&logo=postgresql&logoColor=ffffff)
-![Spark](https://img.shields.io/badge/Apache%20Spark-FDEE21?style=flat-square&logo=apachespark&logoColor=black)
-![Apache Hadoop](https://img.shields.io/badge/Apache%20Hadoop-66CCFF?style=flat-square&logo=apachehadoop&logoColor=black)
-![React](https://img.shields.io/badge/React-%23007ACC?style=flat-square&logo=react&logoColor=white)
-![React Native](https://img.shields.io/badge/react_native-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB)
-![CSS3](https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&logo=css3)
-![Firebase](https://img.shields.io/badge/firebase-%234285F4.svg?style=flat-square&logo=firebase)
-![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat-square&logo=mongodb&logoColor=white)
-![NodeJS](https://img.shields.io/badge/Nodejs-43853d?style=flat-square&logo=node.js&logoColor=white)
-![Express.js](https://img.shields.io/badge/Expressjs-43853d.svg?style=flat-square&logo=express&logoColor=white)
-![Django](https://img.shields.io/badge/django-%23092E20.svg?style=flat-square&logo=django&logoColor=white)
-![JavaScript](https://img.shields.io/badge/-JavaScript-yellow?style=flat-square&logo=javascript&logoColor=white)
-![Prettier](https://img.shields.io/badge/-Prettier-E7A93E?style=flat-square&logo=prettier&logoColor=white)
-![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=ffffff)
-![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
-![Flask](https://img.shields.io/badge/flask-%23000.svg?style=flat-square&logo=flask&logoColor=white)
-![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=flat-square&logo=gnu-bash&logoColor=white)
-![Apache Airflow](https://img.shields.io/badge/Apache%20Airflow-017CEE?style=flat-square&logo=Apache%20Airflow&logoColor=white)
-![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=flat-square&logo=jenkins&logoColor=white)
+    <div class="skill-card">
+      <div class="skill-icon dev-icon"></div>
+      <h3>Web/Mobile dev</h3>
+      <p>I have built full-stack applications that integrate APIs, databases, and modern frameworks to deliver seamless user experiences. My work includes Flask APIs for Hadoop data retrieval at Hyundai, a React–Flask–SQL chatbot at Infineon, a React Native mobile app with Node.js and MongoDB Atlas under Credit Suisse mentorship, and NTU Student Union portals redesigned with ReactJS, Tailwind, and Django APIs to improve usability and performance.</p>
+      <div class="tech-stack-label">Tech stack:</div>
+      <div class="tech-stack">
+        <span class="tech-pill">Flask</span>
+        <span class="tech-pill">Django</span>
+        <span class="tech-pill">ReactJS</span>
+        <span class="tech-pill">React Native</span>
+        <span class="tech-pill">NodeJS</span>
+        <span class="tech-pill">MongoDB</span>
+        <span class="tech-pill">JavaScript</span>
+        <span class="tech-pill">Quarto</span>
+      </div>
+    </div>
 
-## <img src="https://github.com/user-attachments/assets/85168862-3988-4832-bf64-5b3bfa22b220" alt="stars" width="20px" height="20px"/> Contact
+  </div>
 
-Would like to have a chat? [Click here](mailto:aarushi.nema02@gmail.com) to send me an e-mail.
+  <div class="skills-row">
+     <div class="skill-card">
+      <div class="skill-icon automation-icon"></div>
+      <h3>CI/CD & Automation</h3>
+      <p>I have developed feature-rich Android applications using Kotlin and Java, with hands-on experience in Android Studio and a solid understanding of app lifecycle management.</p>
+      <div class="tech-stack-label">Tech stack:</div>
+      <div class="tech-stack">
+        <span class="tech-pill">Kotlin</span>
+        <span class="tech-pill">Java</span>
+        <span class="tech-pill">Flutter</span>
+        <span class="tech-pill">Android Studio</span>
+        <span class="tech-pill">Firebase</span>
+      </div>
+    </div>
 
-I am also happy to connect on different social and professional platforms. Click the badges below to see my profile.
-[![LinkedIn](https://img.shields.io/badge/-Aarushi%20Nema-0077B5?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/aarushi-nema-64a006185/)](https://www.linkedin.com/in/aarushi-nema-64a006185/)
-[![Email](https://img.shields.io/badge/-aarushi.nema02@gmail.com-red?style=flat-square&logo=gmail&logoColor=white)](mailto:aarushi.nema02@gmail.com)
-[![GitHub](https://img.shields.io/github/followers/aarushi-nema?style=social&label=Follow)](https://github.com/aarushi-nema)
+     <div class="skill-card">
+      <div class="skill-icon uiux-icon"></div>
+      <h3>UI/UX</h3>
+      <p>I have developed feature-rich Android applications using Kotlin and Java, with hands-on experience in Android Studio and a solid understanding of app lifecycle management.</p>
+      <div class="tech-stack-label">Tech stack:</div>
+      <div class="tech-stack">
+        <span class="tech-pill">Kotlin</span>
+        <span class="tech-pill">Java</span>
+        <span class="tech-pill">Flutter</span>
+        <span class="tech-pill">Android Studio</span>
+        <span class="tech-pill">Firebase</span>
+      </div>
+    </div>
+  </div>
+</div>
+```
+## Experience
 
+````{=html}
+<div class="experience-container">
+  <div class="experience-card">
+    <div class="experience-header">
+      <div class="experience-title">
+        <h3>Data Platform Intern</h3>
+        <p class="company">Hyundai Motor Group Innovation Centre Singapore</p>
+      </div>
+      <div class="experience-date">
+        <span class="date-badge">May 2024 – Aug 2024</span>
+      </div>
+    </div>
+    <div class="experience-content">
+      <ul class="experience-list">
+        <li>Engineered and optimized scalable data migration pipelines from Relational DBMS (PostgreSQL and Tibero) to Hadoop Data Lake using Python, PySpark, Apache Airflow, and Bash scripting</li>
+        <li>Developed RESTful APIs using Flask and PySpark to enable dynamic data retrieval and filtering from Hadoop Data Lake across multiple data formats</li>
+        <li>Designed and implemented a dynamic data synchronization pipeline integrating multiple database systems to PostgreSQL using PySpark, ensuring data consistency and reliability</li>
+        <li>Created technical documentation for data pipelines</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="experience-card">
+    <div class="experience-header">
+      <div class="experience-title">
+        <h3>Software Development (Data Application) Intern</h3>
+        <p class="company">Infineon Technologies</p>
+      </div>
+      <div class="experience-date">
+        <span class="date-badge">May 2023 – Dec 2023</span>
+      </div>
+    </div>
+    <div class="experience-content">
+      <ul class="experience-list">
+        <li>Collaborated closely with stakeholders and product engineers to identify data challenges and translate business requirements into robust data engineering solutions, resulting in enhanced Tableau dashboards and optimized data pipelines with new feature integrations</li>
+        <li>Developed Python scripts to automate extraction, transformation, and loading (ETL) process for production yield records into a SQL database using Jenkins, meeting stakeholder specifications, and creating an automated email notification system based on the data</li>
+        <li>Spearheaded development of a centralized Robotic Process Automation (RPA) solution from scratch utilizing UiPath and Python, resulting in an 90% reduction in human intervention across four critical software tools</li>
+        <li>Designed and implemented a Confluence-based chatbot using React, Flask, and SQL, significantly reducing time spent searching for and navigating through various software tools</li>
+        <li>Presented technical projects and dashboards to cross-functional teams, translating complex data workflows into business impact</li>
+      </ul>
+    </div>
+  </div>
+</div>
+````
+
+## Projects
+
+````{=html}
+<div class="projects-carousel">
+  <div class="projects-container">
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/blog/breast_cancer_project.webp" alt="Breast Cancer SVM Project">
+      </div>
+      <div class="project-content">
+        <h3>Power of SVM</h3>
+        <p>Small demo building a linear SVM for classification with clear visualizations.</p>
+        <a href="posts/machine_learning_projects/index.qmd" class="project-link">Read more</a>
+      </div>
+    </div>
     
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/homepage_img.png" alt="Portfolio Design">
+      </div>
+      <div class="project-content">
+        <h3>CSS Magic</h3>
+        <p>Design exploration: building crisp, modern components with minimal CSS.</p>
+        <a href="design_portfolio.qmd" class="project-link">See design</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/design_portfolio/round_up/round_up_1.webp" alt="Round Up Design">
+      </div>
+      <div class="project-content">
+        <h3>Round Up App</h3>
+        <p>UI/UX design for a financial app that helps users save money through round-up features.</p>
+        <a href="posts/design_portfolio/round_up.qmd" class="project-link">View project</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/cropped_parrot.gif" alt="AI Agent Project">
+      </div>
+      <div class="project-content">
+        <h3>AI Agent Core</h3>
+        <p>Building a comprehensive customer support agent using Amazon BedRock AgentCore.</p>
+        <a href="posts/machine_learning_projects/AgentCore.qmd" class="project-link">Read more</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/art/sketch_01.webp" alt="Art Portfolio">
+      </div>
+      <div class="project-content">
+        <h3>Art Portfolio</h3>
+        <p>Collection of digital sketches and illustrations showcasing creative design skills.</p>
+        <a href="art.qmd" class="project-link">View gallery</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/homepage_img.png" alt="Portfolio Website">
+      </div>
+      <div class="project-content">
+        <h3>Portfolio Website</h3>
+        <p>Personal portfolio website built with Quarto, featuring responsive design and modern aesthetics.</p>
+        <a href="index.qmd" class="project-link">Explore site</a>
+      </div>
+    </div>
+  </div>
+</div>
+````
+
+### Contact
+
+- ✉️ [aarushi.nema02@gmail.com](mailto:aarushi.nema02@gmail.com)  
+- 🔗 [LinkedIn](https://www.linkedin.com/in/aarushi-nema-64a006185/)  
+- 🐙 [GitHub](https://github.com/aarushi-nema)
+
+```{=html}
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var container = document.querySelector('.typewriter-line');
+    var textNode = document.querySelector('.typewriter-line .tw-text');
+    if(!container || !textNode) return;
+
+    // Plain text phrases to avoid HTML flicker while typing
+    var phrasesPlain = [
+      'Turning Data Into Decisions',
+      'AI Into Action',
+      'UI/UX Into Unforgettable Experiences'
+    ];
+    // Accent mappings applied only when holding at full text
+    function accentify(text){
+      return text
+        .replace(/^Turning Data/, 'Turning <span class="accent">Data</span>')
+        .replace(/^AI/, '<span class="accent">AI</span>')
+        .replace(/^UI\/UX/, '<span class="accent">UI/UX</span>');
+    }
+
+    // Stabilize width to prevent layout shift when empty
+    var maxLen = phrasesPlain.reduce((m,s)=> Math.max(m, s.length), 0);
+    container.style.minWidth = 'ch'.replace('ch', maxLen);
+    container.style.display = 'inline-block';
+
+    var i=0, j=0, deleting=false;
+    function setText(slice){ textNode.textContent = slice; }
+    function setFullWithAccent(str){ container.querySelector('.tw-text').innerHTML = accentify(str); }
+
+    function step(){
+      var current = phrasesPlain[i];
+      if(!deleting){
+        j++;
+        setText(current.slice(0,j));
+        if(j === current.length){
+          setFullWithAccent(current);
+          deleting = true; 
+          return setTimeout(step, 900);
+        }
+        return setTimeout(step, 55);
+      } else {
+        j--;
+        setText(current.slice(0,j));
+        if(j === 0){ deleting=false; i=(i+1)%phrasesPlain.length; return setTimeout(step, 450); }
+        return setTimeout(step, 35);
+      }
+    }
+    step();
+  });
+</script>
+```
