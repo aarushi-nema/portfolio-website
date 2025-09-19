@@ -35,7 +35,8 @@ website:
 format:
   html:
     theme: journal
-    css: styles.css
+    css: 
+      - styles.css
     page-layout: article
 
     
