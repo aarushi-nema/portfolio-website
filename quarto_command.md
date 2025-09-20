@@ -2,32 +2,6 @@
 
 ## 🧹 **Complete Cache Clearing Commands:**
 
-### **1. Stop Quarto Preview:**
-```bash
-pkill -f "quarto preview"
-```
-
-### **2. Clear All Cache Directories:**
-```bash
-rm -rf _site/ .quarto/ .quarto-cache/
-```
-
-### **3. Clear Quarto's Built-in Cache:**
-```bash
-quarto clean
-```
-
-### **4. Clear Browser Cache (Manual):**
-- **Chrome/Edge:** `Ctrl+Shift+R` (Windows) or `Cmd+Shift+R` (Mac)
-- **Firefox:** `Ctrl+F5` (Windows) or `Cmd+Shift+R` (Mac)
-- **Safari:** `Cmd+Option+R` (Mac)
-
-### **5. Force CSS Refresh (Add to styles.css):**
-```bash
-echo "/* Cache bust: $(date +%s) */" >> styles.css
-```
-
-### **6. Complete Reset (Nuclear Option):**
 ```bash
 # Stop preview
 pkill -f "quarto preview"
