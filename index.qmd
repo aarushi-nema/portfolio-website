@@ -25,7 +25,7 @@ I’m a Data Science & AI graduate from NTU Singapore with experience across dat
 
 <div class="btn-row center">
 [Get In Touch](mailto:aarushi.nema02@gmail.com){.btn .btn-light .btn-sm}
-[Download CV](/data/nema_aarushi_resume.pdf){.btn .btn-outline-light .btn-sm}
+[Download CV](/assets/nema_aarushi_resume.pdf){.btn .btn-outline-light .btn-sm}
 </div>
 
 ## Tools of the Trade
