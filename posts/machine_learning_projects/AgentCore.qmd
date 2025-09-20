@@ -2,7 +2,7 @@
 title: "Building a Customer Support Agent Using Amazon BedRock AgentCore"
 author: "Aarushi Nema"
 date: "2025-09-17"
-categories: [Machine Learning]
+categories: [Machine Learning, Agentic AI, AWS]
 type: "machine_learning"
 ---
 ![](../../images/machine_learning_projects/agent_core/AgentCore-icon3.png)
