@@ -1,0 +1,9 @@
+---
+title: "Data Visualization: A Global Journey Through Life Expectancy"
+author: "Aarushi Nema"
+date: "2024-12-15"
+categories: [Data Visualization]
+type: "data_viz"
+---
+
+This project explores global life expectancy trends through interactive data visualizations.

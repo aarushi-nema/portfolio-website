@@ -1,0 +1,18 @@
+---
+title: "Design Portfolio"
+listing:
+  contents: "./posts/design_portfolio"
+  sort: "date desc"
+  type: default
+page-layout: full
+title-block-banner: false
+format:
+  html:
+    include-in-header:
+      - text: |
+          <style>
+          body {
+            color: white;
+          }
+          </style>
+---

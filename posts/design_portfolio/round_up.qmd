@@ -1,0 +1,25 @@
+---
+title: "RoundUp: Finance Tracking App"
+author: "Aarushi Nema"
+date: "2023-02-22"
+categories: [Design Portfolio]
+type: "design_portfolio"
+---
+This project was part of my university course “Venturing into Entrepreneurship.” This was a group project so shout out to my wonderful team members: Prajwal Jagadeesh Kori, Subramania Suresh Sabarish, Phang Jin Jiat Matthias, and Mahir Murtaza, without whom this project wouldn’t have been such a wonderful success! My main role in the project was UI/UX design and technical feasibility analysis.
+
+## What is it?
+RoundUp is a mobile app to help users save and invest money without having to reserve large amounts of their salaries.
+
+## How does it work?
+RoundUp operates through two platforms 1) Spend Management Platform (SMP) and 2) Investment Platform (IP). The SMP will round up the user’s purchases to the next dollar and the rounded up amount will be transferred to their investment wallet to be utilized on the IP. The IP will then allow the users will then allow the users to invest their micro savings into various funds according to their risk appetite. Based on their risk profile, users will be able to invest in funds and gain the corressponding returns.
+
+## How does it help users?
+The combination of the two platforms allows users to save money without feeling the “pinch” of having to set aside a large amount and be able to invest in funds managed by indestry professionals. They will be able to passively invest while gaining actively managed returns.
+
+## Designs
+
+![](../../images/design_portfolio/round_up/img_01.webp)
+
+![](../../images/design_portfolio/round_up/img_02.webp)
+
+![](../../images/design_portfolio/round_up/img_03.webp)

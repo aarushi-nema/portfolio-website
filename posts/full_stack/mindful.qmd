@@ -1,0 +1,9 @@
+---
+title: "MindFul: Unconsious Bias"
+author: "Aarushi Nema"
+date: "2023-07-15"
+categories: [App Development]
+type: "app_dev"
+---
+
+This project explores global life expectancy trends through interactive data visualizations.
