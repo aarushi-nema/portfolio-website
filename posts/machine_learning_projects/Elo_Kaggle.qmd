@@ -1,0 +1,7 @@
+---
+title: "Kaggle - Elo Merchant Category Recommendation"
+author: "Aarushi Nema"
+date: "2025-04-15"
+categories: [Machine Learning]
+type: "machine_learning"
+---

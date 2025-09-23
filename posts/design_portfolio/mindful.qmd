@@ -1,0 +1,7 @@
+---
+title: "MindScope - Mitigating Unconscious Bias"
+author: "Aarushi Nema"
+date: "2023-07-01"
+categories: [Design Portfolio]
+type: "design_portfolio"
+---

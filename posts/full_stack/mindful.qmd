@@ -1,5 +1,5 @@
 ---
-title: "MindFul: Unconsious Bias"
+title: "MindScope: Unconsious Bias"
 author: "Aarushi Nema"
 date: "2023-07-15"
 categories: [App Development]

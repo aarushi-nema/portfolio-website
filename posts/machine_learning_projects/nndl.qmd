@@ -1,0 +1,7 @@
+---
+title: "Image-based Gender Classification"
+author: "Aarushi Nema"
+date: "2024-04-15"
+categories: [Machine Learning]
+type: "machine_learning"
+---
