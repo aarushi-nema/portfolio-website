@@ -4,13 +4,13 @@
     "items": [
       "/posts/learning/activeloop_course/01_langchain101.html",
       "/posts/learning/activeloop_course/02_LLMs.html",
-      "/posts/design_portfolio/c4t.html",
-      "/posts/design_portfolio/mindful.html",
-      "/posts/machine_learning_projects/nndl.html",
-      "/posts/machine_learning_projects/Elo_Kaggle.html",
       "/posts/machine_learning_projects/AgentCore.html",
+      "/posts/design_portfolio/c4t.html",
+      "/posts/machine_learning_projects/Elo_Kaggle.html",
       "/posts/machine_learning_projects/Longetivity_dataviz.html",
+      "/posts/machine_learning_projects/nndl.html",
       "/posts/full_stack/mindful.html",
+      "/posts/design_portfolio/mindful.html",
       "/posts/design_portfolio/round_up.html"
     ]
   },
@@ -19,13 +19,13 @@
     "items": [
       "/posts/learning/activeloop_course/01_langchain101.html",
       "/posts/learning/activeloop_course/02_LLMs.html",
-      "/posts/design_portfolio/c4t.html",
-      "/posts/design_portfolio/mindful.html",
-      "/posts/machine_learning_projects/nndl.html",
-      "/posts/machine_learning_projects/Elo_Kaggle.html",
       "/posts/machine_learning_projects/AgentCore.html",
+      "/posts/design_portfolio/c4t.html",
+      "/posts/machine_learning_projects/Elo_Kaggle.html",
       "/posts/machine_learning_projects/Longetivity_dataviz.html",
+      "/posts/machine_learning_projects/nndl.html",
       "/posts/full_stack/mindful.html",
+      "/posts/design_portfolio/mindful.html",
       "/posts/design_portfolio/round_up.html"
     ]
   },
