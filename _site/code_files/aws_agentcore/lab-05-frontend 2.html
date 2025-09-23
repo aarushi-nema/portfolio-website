@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Large Language Models and LangChain – Aarushi Nema</title>
+<title>Lab 5: Building a Customer-Facing Frontend Application – Aarushi Nema</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,26 +20,61 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-710753787207b25228f8cf56d22a49c7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-710753787207b25228f8cf56d22a49c7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +104,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -79,9 +114,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Aarushi Nema</span>
     </a>
   </div>
@@ -92,15 +127,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../design_portfolio.html"> 
+    <a class="nav-link" href="../../design_portfolio.html"> 
 <span class="menu-text">Design Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../art.html"> 
+    <a class="nav-link" href="../../art.html"> 
 <span class="menu-text">Art</span></a>
   </li>  
   <li class="nav-item compact">
@@ -130,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Large Language Models and LangChain</h1>
+<h1 class="title">Lab 5: Building a Customer-Facing Frontend Application</h1>
 </div>
 
 
@@ -147,30 +182,206 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>Author:</strong> Aarushi Nema<br>
-<strong>Date:</strong> 2024<br>
-<strong>Tags:</strong> Large Language Models, LLMs, LangChain, Deep Learning, NLP, AI, Machine Learning, Parameters, Token Distribution, Finetuning, Prompting, Neural Networks, Attention Layers<br>
-<strong>Categories:</strong> Learning, AI/ML, LLMs, LangChain<br>
-<strong>Abstract:</strong> Comprehensive overview of Large Language Models (LLMs) and their integration with LangChain. Covers LLM architecture, token limitations, and practical implementation considerations.</p>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>In the previous labs, we’ve built a comprehensive Customer Support Agent with memory, shared tools, and production-grade deployment. With them we show cased the capabilities of AgentCore services to move an agentic use case from prototype to production. You can now invoke your agent runtime from any application. On real world applications, customers expect an user interface to be available. Now it’s time to create a user-friendly frontend that customers can actually use to interact with our agent.</p>
+<p><strong>Workshop Journey:</strong> - <strong>Lab 1 (Done)</strong>: Create Agent Prototype - Built a functional customer support agent - <strong>Lab 2 (Done)</strong>: Enhance with Memory - Added conversation context and personalization - <strong>Lab 3 (Done)</strong>: Scale with Gateway &amp; Identity - Shared tools across agents securely - <strong>Lab 4 (Done)</strong>: Deploy to Production - Used AgentCore Runtime with observability - <strong>Lab 5 (Current)</strong>: Build User Interface - Create a customer-facing application</p>
+<p>In this lab, we’ll create a <strong>Streamlit-based web application</strong> that provides customers with an intuitive chat interface to interact with our deployed Customer Support Agent. The frontend will include:</p>
 <ul>
-<li>Understand what LLMs are and how they work</li>
-<li>Learn about LLM architecture and components</li>
-<li>Explore token limitations and context size management</li>
-<li>Understand the relationship between LLMs and LangChain</li>
-<li>Learn about prompting vs finetuning approaches</li>
+<li><strong>Secure Authentication</strong> - User login via Amazon Cognito</li>
+<li><strong>Real-time Chat Interface</strong> - Streamlit-powered conversational UI</li>
+<li><strong>Streaming Responses</strong> - Live response streaming for better user experience</li>
+<li><strong>Session Management</strong> - Persistent conversations with memory</li>
+<li><strong>Response Timing</strong> - Performance metrics for transparency</li>
 </ul>
-<p>LLMs: - learn token distribution and predict the next token - are deep learning models with billions of parameters - excel at NLP tasks - can be used without “finetuning” but instead by employing “prompting” (prompt -&gt; question with examples of similar problems and solutions)</p>
-<p>LLM Architecture: multiple layers of a neural networks, feedforward layers, embedding layers, and attention layers.</p>
+<section id="architecture-for-lab-5" class="level3">
+<h3 class="anchored" data-anchor-id="architecture-for-lab-5">Architecture for Lab 5</h3>
+<p>Our frontend application connects to the AgentCore Runtime endpoint we deployed in Lab 4, providing a complete end-to-end customer support solution:</p>
+<div style="text-align:left">
+<pre><code>&lt;img src="images/architecture_lab5_streamlit.png" width="100%"/&gt;</code></pre>
+</div>
 </section>
-<section id="maximum-number-of-tokens" class="level2">
-<h2 class="anchored" data-anchor-id="maximum-number-of-tokens">Maximum number of tokens</h2>
-<p>In LangChain Library, the LLM context size, or the maximum number of tokens the model can process. It is determined by the specific implementation of the LLM.</p>
-<p>To find the maximum number of tokens for the OpenAI model, refer to the max_tokensCopy attribute. For example, if you’re using the GPT-3Copy model, the maximum number of tokens supported by the model is 2,049.</p>
-<p>It is important to ensure that the input text does not exceed the maximum number of tokens supported by the model, as this may result in truncation or errors during processing. To handle this, you can split the input text into smaller chunks and process them separately, making sure that each chunk is within the allowed token limit. You can then combine the results as needed.</p>
+<section id="what-youll-learn" class="level3">
+<h3 class="anchored" data-anchor-id="what-youll-learn">What You’ll learn</h3>
+<ul>
+<li>How to integrate Secure Authentication with a frontend.</li>
+<li>How to implement real-time streaming responses</li>
+<li>How to manage user sessions and conversation context</li>
+<li>How to create an intuitive chat interface for customer support</li>
+</ul>
+</section>
+<section id="lab-objectives" class="level3">
+<h3 class="anchored" data-anchor-id="lab-objectives">Lab Objectives</h3>
+<p>By the end of this lab, you will have:</p>
+<ul>
+<li>Deployed a customer-facing Streamlit web application</li>
+<li>Integrated secure user authentication with AgentCore Identity</li>
+<li>Implemented real-time streaming chat responses</li>
+<li>Created a complete end-to-end customer support solution</li>
+<li>Tested the full customer journey from login to support resolution</li>
+</ul>
+</section>
+</section>
+<section id="prerequisites" class="level2">
+<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
+<ul>
+<li><strong>Completed Labs 1-4</strong></li>
+<li><strong>Python 3.10+</strong> installed locally</li>
+<li><strong>Streamlit</strong> and required frontend dependencies</li>
+<li><strong>AgentCore Runtime endpoint</strong> from Lab 4 (deployed and ready)</li>
+<li><strong>Amazon Cognito</strong> user pool configured for authentication</li>
+</ul>
+<section id="step-1-install-frontend-dependencies" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-install-frontend-dependencies">Step 1: Install Frontend Dependencies</h3>
+<p>First, let’s install the required packages for our Streamlit frontend application.</p>
+<div id="2154a8d4" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Install frontend-specific dependencies</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install <span class="op">-</span>r lab_helpers<span class="op">/</span>lab5_frontend<span class="op">/</span>requirements.txt <span class="op">-</span>q</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"✅ Frontend dependencies installed successfully!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="step-2-understanding-the-frontend-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-understanding-the-frontend-architecture">Step 2: Understanding the Frontend Architecture</h3>
+<p>Our Streamlit application consists of several key components:</p>
+<section id="core-components" class="level4">
+<h4 class="anchored" data-anchor-id="core-components">Core Components:</h4>
+<ol type="1">
+<li><strong>main.py</strong> - Main Streamlit application with UI and authentication</li>
+<li><strong>chat.py</strong> - Chat management and AgentCore Runtime integration</li>
+<li><strong>chat_utils.py</strong> - Utility functions for message formatting and display</li>
+<li><strong>sagemaker_helper.py</strong> - Helper for generating accessible URLs</li>
+</ol>
+</section>
+<section id="authentication-flow" class="level4">
+<h4 class="anchored" data-anchor-id="authentication-flow">Authentication Flow:</h4>
+<ol type="1">
+<li>User accesses the Streamlit application</li>
+<li>Amazon Cognito handles user authentication</li>
+<li>Valid JWT tokens are used to authorize AgentCore Runtime requests</li>
+<li>User can interact with the Customer Support Agent securely</li>
+</ol>
+</section>
+</section>
+<section id="step-3-launch-the-customer-support-frontend" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-launch-the-customer-support-frontend">Step 3: Launch the Customer Support Frontend 🚀</h3>
+<p>Now let’s start our Streamlit application. The application will:</p>
+<ol type="1">
+<li><strong>Generate an accessible URL</strong> for the application</li>
+<li><strong>Start the Streamlit server</strong> on port 8501</li>
+<li><strong>Connect to your deployed AgentCore Runtime</strong> from Lab 4</li>
+<li><strong>Provide a complete customer support interface</strong></li>
+</ol>
+<p><strong>Important Notes:</strong> - The application will run continuously until you stop it (Ctrl+C) - Make sure your AgentCore Runtime from Lab 4 is still deployed and running - The Cognito authentication tokens are valid for 2 hours</p>
+<div id="d5639a9a" class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the accessible URL for the Streamlit application</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> lab_helpers.lab5_frontend.sagemaker_helper <span class="im">import</span> get_streamlit_url</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>streamlit_url <span class="op">=</span> get_streamlit_url()</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'</span><span class="ch">\n</span><span class="ss">🚀 Customer Support Streamlit Application URL:</span><span class="ch">\n</span><span class="sc">{</span>streamlit_url<span class="sc">}</span><span class="ch">\n</span><span class="ss">'</span>)</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Start the Streamlit application</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="op">!</span>cd lab_helpers<span class="op">/</span>lab5_frontend<span class="op">/</span> <span class="op">&amp;&amp;</span> streamlit run main.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+</section>
+<section id="step-4-testing-your-customer-support-application" class="level3">
+<h3 class="anchored" data-anchor-id="step-4-testing-your-customer-support-application">Step 4: Testing Your Customer Support Application</h3>
+<p>Once your Streamlit application is running, you can test the complete customer support experience:</p>
+<section id="authentication-testing" class="level4">
+<h4 class="anchored" data-anchor-id="authentication-testing">Authentication Testing:</h4>
+<ol type="1">
+<li><strong>Access the application</strong> using the Customer Support Streamlit Application URL provided above</li>
+<li><strong>Sign in</strong> with the test credentials provided in the output</li>
+<li><strong>Verify</strong> that you see the welcome message with your username</li>
+</ol>
+<div style="text-align:left">
+<pre><code>&lt;img src="images/lab5_streamlit_login.png"/&gt;</code></pre>
+</div>
+<div>
+<pre><code>&lt;img src="images/lab5_welcome_user.png"/&gt;</code></pre>
+</div>
+</section>
+<section id="customer-support-scenarios-to-test" class="level4">
+<h4 class="anchored" data-anchor-id="customer-support-scenarios-to-test">Customer Support Scenarios to Test:</h4>
+<p>Product Information Queries: “What are the specifications for your laptops?”</p>
+<p>Return Policy Questions: “What’s the return policy for electronics?”</p>
+<p>Troubleshooting Support: “My iPhone is overheating, what should I do?”</p>
+<div style="text-align:left">
+<pre><code>&lt;img src="images/lab5_agent_question.png" width="75%"/&gt;</code></pre>
+</div>
+<p>Memory and Personalization Testing: Have a conversation, then refresh the page</p>
+<div style="text-align:left">
+<pre><code>&lt;img src="images/lab5_agent_chat_history.png" width="75%"/&gt;</code></pre>
+</div>
+</section>
+<section id="what-to-observe" class="level4">
+<h4 class="anchored" data-anchor-id="what-to-observe">What to Observe:</h4>
+<ul>
+<li><strong>Real-time streaming</strong> - Responses appear as they’re generated</li>
+<li><strong>Response timing</strong> - Performance metrics displayed with each response</li>
+<li><strong>Memory persistence</strong> - Agent remembers conversation context</li>
+<li><strong>Tool integration</strong> - Agent uses appropriate tools for different queries</li>
+<li><strong>Professional UI</strong> - Clean, intuitive customer support interface</li>
+<li><strong>Error handling</strong> - Graceful handling of any issues</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="lab-5-complete" class="level2">
+<h2 class="anchored" data-anchor-id="lab-5-complete">🎉 Lab 5 Complete!</h2>
+<p>Congratulations! You’ve successfully built and deployed a complete customer-facing frontend application for your AI-powered Customer Support Agent. Here’s what you accomplished:</p>
+<section id="what-you-built" class="level3">
+<h3 class="anchored" data-anchor-id="what-you-built">What You Built</h3>
+<ul>
+<li><strong>Web Interface</strong> - Streamlit-based customer support application</li>
+<li><strong>Secure Authentication</strong> - Amazon Cognito integration for user management</li>
+<li><strong>Real-time Streaming</strong> - Live response streaming for better user experience</li>
+<li><strong>Session Management</strong> - Persistent conversations with memory across interactions</li>
+<li><strong>Complete Integration</strong> - Frontend connected to your AgentCore Runtime</li>
+</ul>
+</section>
+<section id="end-to-end-customer-support-solution" class="level3">
+<h3 class="anchored" data-anchor-id="end-to-end-customer-support-solution">End-to-End Customer Support Solution</h3>
+<p>You now have a <strong>complete, customer support system</strong> that includes:</p>
+<ol type="1">
+<li><strong>Intelligent Agent</strong> (Lab 1) - AI-powered support with custom tools</li>
+<li><strong>Persistent Memory</strong> (Lab 2) - Conversation context and personalization</li>
+<li><strong>Shared Tools &amp; Identity</strong> (Lab 3) - Scalable tool sharing and access control</li>
+<li><strong>Production Runtime</strong> (Lab 4) - Secure, scalable deployment with observability</li>
+<li><strong>Customer Frontend</strong> (Lab 5) - web interface for end users</li>
+</ol>
+</section>
+<section id="key-capabilities-demonstrated" class="level3">
+<h3 class="anchored" data-anchor-id="key-capabilities-demonstrated">Key Capabilities Demonstrated</h3>
+<ul>
+<li><strong>Multi-turn Conversations</strong> - Agent maintains context across interactions</li>
+<li><strong>Tool Integration</strong> - Seamless use of product info, return policy, and web search</li>
+<li><strong>Memory Persistence</strong> - Customer preferences and history maintained</li>
+<li><strong>Real-time Performance</strong> - Streaming responses with performance metrics</li>
+<li><strong>Security &amp; Identity</strong> - Proper authentication and authorization</li>
+<li><strong>Observability</strong> - Full tracing and monitoring of agent behavior</li>
+</ul>
+</section>
+<section id="next-steps" class="level3">
+<h3 class="anchored" data-anchor-id="next-steps">Next Steps</h3>
+<p>To further enhance your customer support solution, consider:</p>
+<ul>
+<li><strong>Custom Styling</strong> - Brand the frontend with your company’s design system</li>
+<li><strong>Additional Tools</strong> - Integrate with your existing CRM, ticketing, or knowledge base systems</li>
+<li><strong>Multi-language Support</strong> - Add internationalization for global customers</li>
+<li><strong>Advanced Analytics</strong> - Implement custom dashboards for support team insights</li>
+<li><strong>Mobile Optimization</strong> - Ensure the interface works well on mobile devices</li>
+</ul>
+</section>
+<section id="cleanup" class="level3">
+<h3 class="anchored" data-anchor-id="cleanup">Cleanup</h3>
+<p>When you’re ready to clean up the resources created in this workshop:</p>
+<p><strong>Ready to clean up?</strong> <a href="../../code_files/aws_agentcore/lab-06-cleanup.html">Proceed to Lab 6: Cleanup →</a></p>
+<hr>
+<p><strong>🎊 Congratulations on completing the Amazon Bedrock AgentCore End-to-End Workshop!</strong></p>
+<p>You’ve successfully built a complete, production-ready AI agent solution from prototype to customer-facing application using Amazon Bedrock AgentCore capabilities.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

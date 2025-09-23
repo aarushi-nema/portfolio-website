@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Large Language Models and LangChain – Aarushi Nema</title>
+<title>Aarushi Nema</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,23 +23,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-710753787207b25228f8cf56d22a49c7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-710753787207b25228f8cf56d22a49c7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -67,21 +67,22 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&amp;display=swap" rel="stylesheet">
 
 
-<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Aarushi Nema</span>
     </a>
   </div>
@@ -92,15 +93,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../projects.html"> 
+    <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../design_portfolio.html"> 
+    <a class="nav-link" href="./design_portfolio.html"> 
 <span class="menu-text">Design Portfolio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../art.html"> 
+    <a class="nav-link" href="./art.html"> 
 <span class="menu-text">Art</span></a>
   </li>  
   <li class="nav-item compact">
@@ -121,56 +122,305 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Large Language Models and LangChain</h1>
+
+
+
+<p><img src="assets/me.jpeg" class="avatar-xl center img-fluid" alt="Aarushi Nema" data-fig-cap=""></p>
+<div class="hero-title">
+Hi! I am <span class="accent">Aarushi</span>
 </div>
+<div class="center">
+<p><span class="tagline-lg typewriter-line"> <span class="tw-text"></span><span class="caret"></span> </span></p>
+</div>
+<div class="blurb">
+<p>I’m a Data Science &amp; AI graduate from NTU Singapore with experience across data engineering, ML systems and scalable products. I enjoy bridging research with practical outcomes, and designing solutions that are simple and useful.</p>
+</div>
+<div class="btn-row center">
+<p><a href="mailto:aarushi.nema02@gmail.com" class="btn btn-light btn-sm">Get In Touch</a> <a href="./assets/nema_aarushi_resume.pdf" class="btn btn-outline-light btn-sm">Download CV</a></p>
+</div>
+<section id="tools-of-the-trade" class="level2">
+<h2 class="anchored" data-anchor-id="tools-of-the-trade">Tools of the Trade</h2>
+<div class="skills-layout">
+  <div class="skills-row">
+    <div class="skill-card">
+      <div class="skill-icon ai-icon"></div>
+      <h3 class="anchored">Data / AI</h3>
+      <p>I design intelligent systems combining machine learning, automated data pipelines, and responsible AI. My work includes PySpark + Airflow data pipelines at Hyundai, ETL automation and RPA at Infineon, and research on conversational recommenders (PRICAI 2025 Accepted), value-aligned LLMs (NeurIPS 2025 submission), and some Kaggle Competitions.</p>
+      <div class="tech-stack-label">Tech stack:</div>
+      <div class="tech-stack">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">PyTorch</span>
+        <span class="tech-pill">TensorFlow</span>
+        <span class="tech-pill">Scikit-Learn</span>
+        <span class="tech-pill">PySpark</span>
+        <span class="tech-pill">Hadoop</span>
+        <span class="tech-pill">SQL</span>
+        <span class="tech-pill">Tableau</span>
+        <span class="tech-pill">Pandas</span>
+      </div>
+    </div>
 
+    <div class="skill-card">
+      <div class="skill-icon dev-icon"></div>
+      <h3 class="anchored">Web/Mobile dev</h3>
+      <p>I build full-stack web and mobile apps that integrate APIs, databases, and responsive UIs. Examples include Flask APIs for Hadoop data retrieval, a React–Flask–SQL chatbot at Infineon, a React Native + Node.js + MongoDB app under Credit Suisse mentorship, and NTU Student Union portals modernized with ReactJS and Django.</p>
+      <div class="tech-stack-label">Tech stack:</div>
+      <div class="tech-stack">
+        <span class="tech-pill">Flask</span>
+        <span class="tech-pill">RESTful API</span>
+        <span class="tech-pill">Django</span>
+        <span class="tech-pill">ReactJS</span>
+        <span class="tech-pill">React Native</span>
+        <span class="tech-pill">NodeJS</span>
+        <span class="tech-pill">MongoDB</span>
+        <span class="tech-pill">JavaScript</span>
+        <span class="tech-pill">Quarto</span>
+      </div>
+    </div>
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
   </div>
-  
 
+  <div class="skills-row">
+     <div class="skill-card">
+      <div class="skill-icon automation-icon"></div>
+      <h3 class="anchored">CI/CD &amp; Automation</h3>
+      <p>I specialize in automating data workflows and deployment pipelines. At Infineon, I built Jenkins-based ETL automation and a UiPath + Python RPA solutions. At Hyundai, I engineered PySpark + Airflow + Bash Script pipelines to synchronize enterprise data across multiple databases.</p>
+      <div class="tech-stack-label">Tech stack:</div>
+      <div class="tech-stack">
+        <span class="tech-pill">UiPath</span>
+        <span class="tech-pill">Jenkins</span>
+        <span class="tech-pill">BitBucket</span>
+        <span class="tech-pill">Git</span>
+        <span class="tech-pill">Apache Airflow</span>
+        <span class="tech-pill">Bash Scripting</span>
+      </div>
+    </div>
 
-</header>
-
-
-<p><strong>Author:</strong> Aarushi Nema<br>
-<strong>Date:</strong> 2024<br>
-<strong>Tags:</strong> Large Language Models, LLMs, LangChain, Deep Learning, NLP, AI, Machine Learning, Parameters, Token Distribution, Finetuning, Prompting, Neural Networks, Attention Layers<br>
-<strong>Categories:</strong> Learning, AI/ML, LLMs, LangChain<br>
-<strong>Abstract:</strong> Comprehensive overview of Large Language Models (LLMs) and their integration with LangChain. Covers LLM architecture, token limitations, and practical implementation considerations.</p>
-<section id="learning-objectives" class="level2">
-<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
-<ul>
-<li>Understand what LLMs are and how they work</li>
-<li>Learn about LLM architecture and components</li>
-<li>Explore token limitations and context size management</li>
-<li>Understand the relationship between LLMs and LangChain</li>
-<li>Learn about prompting vs finetuning approaches</li>
-</ul>
-<p>LLMs: - learn token distribution and predict the next token - are deep learning models with billions of parameters - excel at NLP tasks - can be used without “finetuning” but instead by employing “prompting” (prompt -&gt; question with examples of similar problems and solutions)</p>
-<p>LLM Architecture: multiple layers of a neural networks, feedforward layers, embedding layers, and attention layers.</p>
+     <div class="skill-card">
+      <div class="skill-icon uiux-icon"></div>
+      <h3 class="anchored">UI/UX</h3>
+      <p>I love to craft intuitive digital experiences by blending design and engineering. As NTUSU IT Committee Vice-Chairperson, I led Figma prototyping and redesigned portals. I also designed app interfaces under Credit Suisse mentorship and built visual dashboards with Tableau. I have also built multiple Figma based designs for websites and mobile apps for academic projects.</p>
+      <div class="tech-stack-label">Tech stack:</div>
+      <div class="tech-stack">
+        <span class="tech-pill">Figma</span>
+        <span class="tech-pill">Shadcn</span>
+        <span class="tech-pill">TailWindCSS</span>
+      </div>
+    </div>
+  </div>
+</div>
 </section>
-<section id="maximum-number-of-tokens" class="level2">
-<h2 class="anchored" data-anchor-id="maximum-number-of-tokens">Maximum number of tokens</h2>
-<p>In LangChain Library, the LLM context size, or the maximum number of tokens the model can process. It is determined by the specific implementation of the LLM.</p>
-<p>To find the maximum number of tokens for the OpenAI model, refer to the max_tokensCopy attribute. For example, if you’re using the GPT-3Copy model, the maximum number of tokens supported by the model is 2,049.</p>
-<p>It is important to ensure that the input text does not exceed the maximum number of tokens supported by the model, as this may result in truncation or errors during processing. To handle this, you can split the input text into smaller chunks and process them separately, making sure that each chunk is within the allowed token limit. You can then combine the results as needed.</p>
+<section id="experience" class="level2">
+<h2 class="anchored" data-anchor-id="experience">Experience</h2>
+<div class="experience-container">
+  <div class="experience-card">
+    <div class="experience-header">
+      <div class="experience-title">
+        <h3 class="anchored">Data Platform Intern</h3>
+        <p class="company">Hyundai Motor Group Innovation Centre Singapore</p>
+      </div>
+      <div class="experience-date">
+        <span class="date-badge">May 2024 – Aug 2024</span>
+      </div>
+    </div>
+    <div class="experience-content">
+      <ul class="experience-list">
+        <li>Engineered and optimized scalable data migration pipelines from Relational DBMS (PostgreSQL and Tibero) to Hadoop Data Lake using Python, PySpark, Apache Airflow, and Bash scripting</li>
+        <li>Developed RESTful APIs using Flask and PySpark to enable dynamic data retrieval and filtering from Hadoop Data Lake across multiple data formats</li>
+        <li>Designed and implemented a dynamic data synchronization pipeline integrating multiple database systems to PostgreSQL using PySpark, ensuring data consistency and reliability</li>
+        <li>Created technical documentation for data pipelines</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="experience-card">
+    <div class="experience-header">
+      <div class="experience-title">
+        <h3 class="anchored">Software Development (Data Application) Intern</h3>
+        <p class="company">Infineon Technologies</p>
+      </div>
+      <div class="experience-date">
+        <span class="date-badge">May 2023 – Dec 2023</span>
+      </div>
+    </div>
+    <div class="experience-content">
+      <ul class="experience-list">
+        <li>Collaborated closely with stakeholders and product engineers to identify data challenges and translate business requirements into robust data engineering solutions, resulting in enhanced Tableau dashboards and optimized data pipelines with new feature integrations</li>
+        <li>Developed Python scripts to automate extraction, transformation, and loading (ETL) process for production yield records into a SQL database using Jenkins, meeting stakeholder specifications, and creating an automated email notification system based on the data</li>
+        <li>Spearheaded development of a centralized Robotic Process Automation (RPA) solution from scratch utilizing UiPath and Python, resulting in an 90% reduction in human intervention across four critical software tools</li>
+        <li>Designed and implemented a Confluence-based chatbot using React, Flask, and SQL, significantly reducing time spent searching for and navigating through various software tools</li>
+        <li>Presented technical projects and dashboards to cross-functional teams, translating complex data workflows into business impact</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+<section id="education" class="level2">
+<h2 class="anchored" data-anchor-id="education">Education</h2>
+<div class="education-container">
+  <div class="education-card">
+    <div class="education-header">
+      <div class="education-title">
+        <h3 class="anchored">Nanyang Technological University, Singapore</h3>
+        <p class="degree">Bachelor of Computing, Data Science and Artificial Intelligence (Honors with Distinction)</p>
+      </div>
+      <div class="education-date">
+        <span class="date-badge">Aug 2021 – Jun 2025</span>
+      </div>
+    </div>
+    <div class="education-content">
+      <ul class="education-list">
+        <li>Vice chairperson, NTU Student Union IT Committee (Aug 2022 - Aug 2024)</li>
+        <li>Hon Gen Secretary, NTU Women In Tech (Aug 2022 - Aug 2023)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+<section id="projects" class="level2">
+<h2 class="anchored" data-anchor-id="projects">Projects</h2>
+<div class="projects-carousel">
+  <div class="projects-container">
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/machine_learning_projects/agent_core/AgentCore-icon3.png" alt="AI Agent Core Project">
+      </div>
+      <div class="project-content">
+        <h3 class="anchored">AI Agent Core</h3>
+        <p>Building a comprehensive customer support agent using Amazon BedRock AgentCore with advanced AI capabilities.</p>
+        <a href="./posts/machine_learning_projects/AgentCore.html" class="project-link">Read more</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/machine_learning_projects/graphrag_crs/graphrag_crs_architecture.png" alt="GraphRAG CRS Project">
+      </div>
+      <div class="project-content">
+        <h3 class="anchored">GraphRAG CRS</h3>
+        <p>Context-aware conversational recommendation system with knowledge-grounded prompt learning and graph-based retrieval.</p>
+        <a href="posts/machine_learning_projects/GraphRAG_CRS.qmd" class="project-link">Read more</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/homepage_img.png" alt="Data Visualization Project">
+      </div>
+      <div class="project-content">
+        <h3 class="anchored">Life Expectancy DataViz</h3>
+        <p>Interactive data visualization exploring global life expectancy trends and patterns across different regions.</p>
+        <a href="posts/machine_learning_projects/longetivity_dataviz.qmd" class="project-link">View project</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/homepage_img.png" alt="MindFul App">
+      </div>
+      <div class="project-content">
+        <h3 class="anchored">MindFul App</h3>
+        <p>Mobile application addressing unconscious bias through thoughtful design and user-centered approach.</p>
+        <a href="posts/app_dev/mindful.qmd" class="project-link">View project</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/design_portfolio/round_up/round_up_1.webp" alt="Round Up Design">
+      </div>
+      <div class="project-content">
+        <h3 class="anchored">RoundUp Finance App</h3>
+        <p>UI/UX design for a financial tracking app that helps users save money through innovative round-up features.</p>
+        <a href="./posts/design_portfolio/round_up.html" class="project-link">View design</a>
+      </div>
+  </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/homepage_img.png" alt="Portfolio Website">
+      </div>
+      <div class="project-content">
+        <h3 class="anchored">Portfolio Website</h3>
+        <p>Personal portfolio website built with Quarto, featuring responsive design, modern aesthetics, and dynamic interactions.</p>
+        <a href="./index.html" class="project-link">Explore site</a>
+      </div>
+    </div>
+    
+    <div class="project-card more-projects-card">
+      <div class="more-projects-content">
+        <a href="./projects.html" class="more-projects-btn">More Projects →</a>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="lets-connect" class="level3">
+<h3 class="anchored" data-anchor-id="lets-connect">Let’s Connect!</h3>
+<div class="contact-simple">
+  <a href="mailto:aarushi.nema02@gmail.com" class="contact-item">✉️ aarushi.nema02@gmail.com</a>
+  <a href="https://www.linkedin.com/in/aarushi-nema-64a006185/" class="contact-item" target="_blank">🔗 LinkedIn</a>
+  <a href="https://github.com/aarushi-nema" class="contact-item" target="_blank">🐙 GitHub</a>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var container = document.querySelector('.typewriter-line');
+    var textNode = document.querySelector('.typewriter-line .tw-text');
+    if(!container || !textNode) return;
+
+    // Plain text phrases to avoid HTML flicker while typing
+    var phrasesPlain = [
+      'Turning Data Into Decisions',
+      'AI Into Action',
+      'UI/UX Into Unforgettable Experiences'
+    ];
+    // Accent mappings applied only when holding at full text
+    function accentify(text){
+      return text
+        .replace(/^Turning Data/, 'Turning <span class="accent">Data</span>')
+        .replace(/^AI/, '<span class="accent">AI</span>')
+        .replace(/^UI\/UX/, '<span class="accent">UI/UX</span>');
+    }
+
+    // Stabilize width to prevent layout shift when empty
+    var maxLen = phrasesPlain.reduce((m,s)=> Math.max(m, s.length), 0);
+    container.style.minWidth = 'ch'.replace('ch', maxLen);
+    container.style.display = 'inline-block';
+
+    var i=0, j=0, deleting=false;
+    function setText(slice){ textNode.textContent = slice; }
+    function setFullWithAccent(str){ container.querySelector('.tw-text').innerHTML = accentify(str); }
+
+    function step(){
+      var current = phrasesPlain[i];
+      if(!deleting){
+        j++;
+        setText(current.slice(0,j));
+        if(j === current.length){
+          setFullWithAccent(current);
+          deleting = true; 
+          return setTimeout(step, 900);
+        }
+        return setTimeout(step, 55);
+      } else {
+        j--;
+        setText(current.slice(0,j));
+        if(j === 0){ deleting=false; i=(i+1)%phrasesPlain.length; return setTimeout(step, 450); }
+        return setTimeout(step, 35);
+      }
+    }
+    step();
+  });
+</script>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
