@@ -182,6 +182,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<p><strong>Author:</strong> Aarushi Nema<br>
+<strong>Date:</strong> 2025-09-17<br>
+<strong>Tags:</strong> Customer Support Agent, Amazon BedRock AgentCore, AWS, Machine Learning, Agentic AI, AI, Workshop, Project, Production, Cloud Computing, Strands Agents, Anthropic Claude, Bedrock, Prototype<br>
+<strong>Categories:</strong> Machine Learning, Agentic AI, AWS, Workshop<br>
+<strong>Abstract:</strong> This lab is part of the AWS Users Group Workshop on 17th September, 2025. The goal is to build a comprehensive, production-ready customer support agent using Amazon Bedrock AgentCore and Strands Agents framework.</p>
 <section id="overview" class="level3">
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
 <p><a href="https://aws.amazon.com/bedrock/agentcore/">Amazon Bedrock AgentCore</a> helps you deploying and operating AI agents securely at scale - using any framework and model. It provides you with the capability to move from prototype to production faster.</p>
@@ -189,6 +194,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><strong>Workshop Journey:</strong> - <strong>Lab 1 (Current)</strong>: Create Agent Prototype - Build a functional customer support agent - <strong>Lab 2</strong>: Enhance with Memory - Add conversation context and personalization - <strong>Lab 3</strong>: Scale with Gateway &amp; Identity - Share tools across agents securely - <strong>Lab 4</strong>: Deploy to Production - Use AgentCore Runtime with observability - <strong>Lab 5</strong>: Build User Interface - Create a customer-facing application</p>
 <p>In this first lab, we’ll build a Customer Support Agent prototype that will evolve throughout the workshop into a production-ready system serving multiple customers with persistent memory, shared tools, and full observability. Our agent will have the following local tools available: - <strong>get_return_policy()</strong> - Get return policy for specific products - <strong>get_product_info()</strong> - Get product information - <strong>web_search()</strong> - Search the web for troubleshooting help - <strong>get_technical_support()</strong> - Search a Bedrock Knowledge Base</p>
 </section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Create tools using the <span class="citation" data-cites="tool">@tool</span> decorator</li>
+<li>Initialize a Strands Agent with model and tools</li>
+<li>Test Agent locally in a Jupyter Notebook</li>
+<li>Understand the basic architecture of AI agents</li>
+<li>Learn about Amazon Bedrock AgentCore capabilities</li>
+</ul>
 <section id="architecture-for-lab-1" class="level3">
 <h3 class="anchored" data-anchor-id="architecture-for-lab-1">Architecture for Lab 1</h3>
 <div style="text-align:left">
@@ -741,6 +755,7 @@ If you've tried these solutions and your iPhone 14 still overheats excessively, 
 Would you like me to provide more details on any of these solutions? Or would you like information about the return policy for smartphones if you decide you want to return it?</code></pre>
 </div>
 </div>
+</section>
 </section>
 </section>
 <section id="lab-1-complete" class="level2">

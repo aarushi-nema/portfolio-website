@@ -182,11 +182,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<p><strong>Author:</strong> Aarushi Nema<br>
+<strong>Date:</strong> 2025-09-17<br>
+<strong>Tags:</strong> Customer Support Agent, Amazon BedRock AgentCore, AWS, Machine Learning, Agentic AI, Cleanup, Resource Management, Memory, Runtime, Security, Observability, CloudWatch, ECR, Production, Cloud Computing, Strands Agents, Anthropic Claude, Bedrock<br>
+<strong>Categories:</strong> Machine Learning, Agentic AI, AWS, Workshop, DevOps<br>
+<strong>Abstract:</strong> This notebook provides a comprehensive cleanup process for all AWS resources created during the AgentCore End-to-End tutorial, including memory, runtime, security, and observability resources.</p>
 <p>This notebook provides a comprehensive cleanup process for all resources created during the AgentCore End-to-End tutorial.</p>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>This cleanup process will remove: - <strong>Memory</strong>: AgentCore Memory resources and stored data - <strong>Runtime</strong>: Agent runtime instances and ECR repositories - <strong>Security</strong>: Execution roles, and Authorization Provider resources - <strong>Observability</strong>: CloudWatch log groups and streams - <strong>Local Files</strong>: Generated configuration and code files</p>
 <p>⚠️ <strong>Important</strong>: This cleanup is irreversible. Make sure you have saved any important data (if needed) before proceeding.</p>
+</section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Understand the complete resource cleanup process for AgentCore services</li>
+<li>Learn to safely remove AWS resources without affecting other services</li>
+<li>Clean up AgentCore Memory, Runtime, and Gateway resources</li>
+<li>Remove security roles and observability components</li>
+<li>Clean up local files and configurations</li>
+</ul>
 <hr>
 </section>
 <section id="step-1-import-required-dependencies" class="level2">

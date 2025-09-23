@@ -182,6 +182,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<p><strong>Author:</strong> Aarushi Nema<br>
+<strong>Date:</strong> 2025-09-17<br>
+<strong>Tags:</strong> Customer Support Agent, Amazon BedRock AgentCore, AWS, Machine Learning, Agentic AI, Gateway, MCP, Model Context Protocol, Tool Sharing, Security, Authentication, Production, Cloud Computing, Strands Agents, Anthropic Claude, Bedrock<br>
+<strong>Categories:</strong> Machine Learning, Agentic AI, AWS, Workshop<br>
+<strong>Abstract:</strong> This lab demonstrates how to securely connect and share tools across agents using Amazon Bedrock AgentCore Gateway and the Model Context Protocol (MCP). Learn to centralize tool management and implement secure authentication.</p>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
 <p>In this Lab, you will learn how to integrate tools available in your organization with the Customer Support Agent using the Amazon Bedrock Gateway.</p>
@@ -202,6 +207,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Code duplication across different agents</li>
 <li>Inconsistent tool behavior and maintenance overhead</li>
 <li>No centralized security or access control</li>
+</ul>
+</section>
+</section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Understand the Model Context Protocol (MCP) and its benefits</li>
+<li>Learn to use Amazon Bedrock AgentCore Gateway for tool centralization</li>
+<li>Implement secure authentication and access control for shared tools</li>
+<li>Convert APIs and Lambda functions into MCP-compatible tools</li>
+<li>Eliminate code duplication and improve tool maintenance</li>
 <li>Difficulty scaling to multiple use cases</li>
 </ul>
 <p>After this lab, we will have centralized, reusable tools that can serve:</p>
@@ -212,7 +228,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Returns Processing Agent (needs return policies and customer profiles)</li>
 </ul>
 <p>and other use cases.</p>
-</section>
 <section id="adding-secure-authentication-with-agentcore-identity" class="level3">
 <h3 class="anchored" data-anchor-id="adding-secure-authentication-with-agentcore-identity">Adding secure authentication with AgentCore Identity</h3>
 <p>Additionally, AgentCore Gateway requires you to securely authenticate both inbound and outbound connections. <a href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html">AgentCore Identity</a> provides seamless agent identity and access management across AWS services and third-party applications such as Slack and Zoom while supporting any standard identity providers such as Okta, Entra, and Amazon Cognito. In this lab we will see how AgentCore Gateway integrates with AgentCore Identity to provide secure connections via inbound and outbound authentication.</p>

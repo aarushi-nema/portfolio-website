@@ -182,6 +182,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
+<p><strong>Author:</strong> Aarushi Nema<br>
+<strong>Date:</strong> 2025-09-17<br>
+<strong>Tags:</strong> Customer Support Agent, Amazon BedRock AgentCore, AWS, Machine Learning, Agentic AI, Memory, Personalization, Short-Term Memory, Long-Term Memory, Production, Cloud Computing, Strands Agents, Anthropic Claude, Bedrock<br>
+<strong>Categories:</strong> Machine Learning, Agentic AI, AWS, Workshop<br>
+<strong>Abstract:</strong> This lab focuses on enhancing the customer support agent with memory capabilities using Amazon Bedrock AgentCore Memory. Learn to implement both short-term and long-term memory for personalized customer experiences.</p>
 <section id="overview" class="level3">
 <h3 class="anchored" data-anchor-id="overview">Overview</h3>
 <p>In Lab 1, you built a Customer Support Agent that worked well for a single user in a local session. However, real-world customer support needs to scale beyond a single user running in a local environment.</p>
@@ -191,6 +196,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Memory is a critical component of intelligence. While Large Language Models (LLMs) have impressive capabilities, they lack persistent memory across conversations. <a href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory-getting-started.html">Amazon Bedrock AgentCore Memory</a> addresses this limitation by providing a managed service that enables AI agents to maintain context over time, remember important facts, and deliver consistent, personalized experiences.</p>
 <p>AgentCore Memory operates on two levels: - <strong>Short-Term Memory</strong>: Immediate conversation context and session-based information that provides continuity within a single interaction or closely related sessions. - <strong>Long-Term Memory</strong>: Persistent information extracted and stored across multiple conversations, including facts, preferences, and summaries that enable personalized experiences over time.</p>
 </section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Understand the importance of memory in AI agents</li>
+<li>Implement AgentCore Memory resources with multiple strategies</li>
+<li>Configure short-term and long-term memory for customer support</li>
+<li>Learn about USER_PREFERENCE and SEMANTIC memory strategies</li>
+<li>Transform a stateless agent into a personalized assistant</li>
+</ul>
 <section id="architecture-for-lab-2" class="level3">
 <h3 class="anchored" data-anchor-id="architecture-for-lab-2">Architecture for Lab 2</h3>
 <div style="text-align:left">
@@ -335,6 +349,7 @@ While we wait, let's understand what's happening behind the scenes:
 Memory ID: CustomerSupportMemory-cGl9C845Vd</code></pre>
 </div>
 </div>
+</section>
 </section>
 </section>
 <section id="step-3-seed-previous-customer-interactions" class="level2">
