@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Aarushi Nema",
     "section": "",
-    "text": "LangChain101\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge Language Models and LangChain\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Customer Support Agent Using Amazon BedRock AgentCore\n\n\n\nMachine Learning\n\nAgentic AI\n\nAWS\n\n\n\n\n\n\n\n\n\nSep 17, 2025\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualization: A Global Journey Through Life Expectancy\n\n\n\nData Visualization\n\n\n\n\n\n\n\n\n\nDec 15, 2024\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nMindFul: Unconsious Bias\n\n\n\nApp Development\n\n\n\n\n\n\n\n\n\nJul 15, 2023\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nRoundUp: Finance Tracking App\n\n\n\nDesign Portfolio\n\n\n\n\n\n\n\n\n\nFeb 22, 2023\n\n\nAarushi Nema\n\n\n\n\n\nNo matching items"
+    "text": "LangChain101\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge Language Models and LangChain\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Customer Support Agent Using Amazon BedRock AgentCore\n\n\n\nMachine Learning\n\nAgentic AI\n\nAWS\n\n\n\n\n\n\n\n\n\nSep 17, 2025\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nC4T Energy Mobile App\n\n\n\nDesign Portfolio\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nKaggle - Elo Merchant Category Recommendation\n\n\n\nMachine Learning\n\n\n\n\n\n\n\n\n\nApr 15, 2025\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualization: A Global Journey Through Life Expectancy\n\n\n\nData Visualization\n\n\n\n\n\n\n\n\n\nDec 15, 2024\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nImage-based Gender Classification\n\n\n\nMachine Learning\n\n\n\n\n\n\n\n\n\nApr 15, 2024\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nMindScope: Unconsious Bias\n\n\n\nApp Development\n\n\n\n\n\n\n\n\n\nJul 15, 2023\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nMindScope - Mitigating Unconscious Bias\n\n\n\nDesign Portfolio\n\n\n\n\n\n\n\n\n\nJul 1, 2023\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nRoundUp: Finance Tracking App\n\n\n\nDesign Portfolio\n\n\n\n\n\n\n\n\n\nFeb 22, 2023\n\n\nAarushi Nema\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "quarto_command.html",
@@ -233,7 +233,7 @@
   {
     "objectID": "posts/full_stack/mindful.html",
     "href": "posts/full_stack/mindful.html",
-    "title": "MindFul: Unconsious Bias",
+    "title": "MindScope: Unconsious Bias",
     "section": "",
     "text": "This project explores global life expectancy trends through interactive data visualizations."
   },
@@ -473,13 +473,13 @@
     "href": "projects.html",
     "title": "Aarushi Nema",
     "section": "",
-    "text": "LangChain101\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge Language Models and LangChain\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Customer Support Agent Using Amazon BedRock AgentCore\n\n\n\nMachine Learning\n\nAgentic AI\n\nAWS\n\n\n\n\n\n\n\n\n\nSep 17, 2025\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualization: A Global Journey Through Life Expectancy\n\n\n\nData Visualization\n\n\n\n\n\n\n\n\n\nDec 15, 2024\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nMindFul: Unconsious Bias\n\n\n\nApp Development\n\n\n\n\n\n\n\n\n\nJul 15, 2023\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nRoundUp: Finance Tracking App\n\n\n\nDesign Portfolio\n\n\n\n\n\n\n\n\n\nFeb 22, 2023\n\n\nAarushi Nema\n\n\n\n\n\nNo matching items"
+    "text": "LangChain101\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLarge Language Models and LangChain\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuilding a Customer Support Agent Using Amazon BedRock AgentCore\n\n\n\nMachine Learning\n\nAgentic AI\n\nAWS\n\n\n\n\n\n\n\n\n\nSep 17, 2025\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nC4T Energy Mobile App\n\n\n\nDesign Portfolio\n\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nKaggle - Elo Merchant Category Recommendation\n\n\n\nMachine Learning\n\n\n\n\n\n\n\n\n\nApr 15, 2025\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nData Visualization: A Global Journey Through Life Expectancy\n\n\n\nData Visualization\n\n\n\n\n\n\n\n\n\nDec 15, 2024\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nImage-based Gender Classification\n\n\n\nMachine Learning\n\n\n\n\n\n\n\n\n\nApr 15, 2024\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nMindScope: Unconsious Bias\n\n\n\nApp Development\n\n\n\n\n\n\n\n\n\nJul 15, 2023\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nMindScope - Mitigating Unconscious Bias\n\n\n\nDesign Portfolio\n\n\n\n\n\n\n\n\n\nJul 1, 2023\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nRoundUp: Finance Tracking App\n\n\n\nDesign Portfolio\n\n\n\n\n\n\n\n\n\nFeb 22, 2023\n\n\nAarushi Nema\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "design_portfolio.html",
     "href": "design_portfolio.html",
     "title": "Design Portfolio",
     "section": "",
-    "text": "RoundUp: Finance Tracking App\n\n\n\n\n\n\n\n\nFeb 22, 2023\n\n\nAarushi Nema\n\n\n\n\n\nNo matching items"
+    "text": "C4T Energy Mobile App\n\n\n\n\n\n\n\n\nSep 10, 2025\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nMindScope - Mitigating Unconscious Bias\n\n\n\n\n\n\n\n\nJul 1, 2023\n\n\nAarushi Nema\n\n\n\n\n\n\n\n\n\n\n\n\nRoundUp: Finance Tracking App\n\n\n\n\n\n\n\n\nFeb 22, 2023\n\n\nAarushi Nema\n\n\n\n\n\nNo matching items"
   }
 ]
