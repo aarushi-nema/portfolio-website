@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>projects – Aarushi Nema</title>
+<title>Aarushi Nema</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -29,8 +29,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -69,65 +67,8 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&amp;display=swap" rel="stylesheet">
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -152,7 +93,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./projects.html" aria-current="page"> 
+    <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -184,311 +125,305 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(10)</span></div><div class="category" data-category="QWdlbnRpYyUyMEFJ">Agentic AI <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QXBwJTIwRGV2ZWxvcG1lbnQ=">App Development <span class="quarto-category-count">(1)</span></div><div class="category" data-category="QVdT">AWS <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGF0YSUyMFZpc3VhbGl6YXRpb24=">Data Visualization <span class="quarto-category-count">(1)</span></div><div class="category" data-category="RGVzaWduJTIwUG9ydGZvbGlv">Design Portfolio <span class="quarto-category-count">(3)</span></div><div class="category" data-category="TWFjaGluZSUyMExlYXJuaW5n">Machine Learning <span class="quarto-category-count">(3)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
+<p><img src="assets/me.jpeg" class="avatar-xl center img-fluid" alt="Aarushi Nema" data-fig-cap=""></p>
+<div class="hero-title">
+Hi! I am <span class="accent">Aarushi</span>
+</div>
+<div class="center">
+<p><span class="tagline-lg typewriter-line"> <span class="tw-text"></span><span class="caret"></span> </span></p>
+</div>
+<div class="blurb">
+<p>I’m a Data Science &amp; AI graduate from NTU Singapore with experience across data engineering, ML systems and scalable products. I enjoy bridging research with practical outcomes, and designing solutions that are simple and useful.</p>
+</div>
+<div class="btn-row center">
+<p><a href="mailto:aarushi.nema02@gmail.com" class="btn btn-light btn-sm">Get In Touch</a> <a href="./assets/nema_aarushi_resume.pdf" class="btn btn-outline-light btn-sm">Download CV</a></p>
+</div>
+<section id="tools-of-the-trade" class="level2">
+<h2 class="anchored" data-anchor-id="tools-of-the-trade">Tools of the Trade</h2>
+<div class="skills-layout">
+  <div class="skills-row">
+    <div class="skill-card">
+      <div class="skill-icon ai-icon"></div>
+      <h3 class="anchored">Data / AI</h3>
+      <p>I design intelligent systems combining machine learning, automated data pipelines, and responsible AI. My work includes PySpark + Airflow data pipelines at Hyundai, ETL automation and RPA at Infineon, and research on conversational recommenders (PRICAI 2025 Accepted), value-aligned LLMs (NeurIPS 2025 submission), and some Kaggle Competitions.</p>
+      <div class="tech-stack-label">Tech stack:</div>
+      <div class="tech-stack">
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">PyTorch</span>
+        <span class="tech-pill">TensorFlow</span>
+        <span class="tech-pill">Scikit-Learn</span>
+        <span class="tech-pill">PySpark</span>
+        <span class="tech-pill">Hadoop</span>
+        <span class="tech-pill">SQL</span>
+        <span class="tech-pill">Tableau</span>
+        <span class="tech-pill">Pandas</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon dev-icon"></div>
+      <h3 class="anchored">Web/Mobile dev</h3>
+      <p>I build full-stack web and mobile apps that integrate APIs, databases, and responsive UIs. Examples include Flask APIs for Hadoop data retrieval, a React–Flask–SQL chatbot at Infineon, a React Native + Node.js + MongoDB app under Credit Suisse mentorship, and NTU Student Union portals modernized with ReactJS and Django.</p>
+      <div class="tech-stack-label">Tech stack:</div>
+      <div class="tech-stack">
+        <span class="tech-pill">Flask</span>
+        <span class="tech-pill">RESTful API</span>
+        <span class="tech-pill">Django</span>
+        <span class="tech-pill">ReactJS</span>
+        <span class="tech-pill">React Native</span>
+        <span class="tech-pill">NodeJS</span>
+        <span class="tech-pill">MongoDB</span>
+        <span class="tech-pill">JavaScript</span>
+        <span class="tech-pill">Quarto</span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="skills-row">
+     <div class="skill-card">
+      <div class="skill-icon automation-icon"></div>
+      <h3 class="anchored">CI/CD &amp; Automation</h3>
+      <p>I specialize in automating data workflows and deployment pipelines. At Infineon, I built Jenkins-based ETL automation and a UiPath + Python RPA solutions. At Hyundai, I engineered PySpark + Airflow + Bash Script pipelines to synchronize enterprise data across multiple databases.</p>
+      <div class="tech-stack-label">Tech stack:</div>
+      <div class="tech-stack">
+        <span class="tech-pill">UiPath</span>
+        <span class="tech-pill">Jenkins</span>
+        <span class="tech-pill">BitBucket</span>
+        <span class="tech-pill">Git</span>
+        <span class="tech-pill">Apache Airflow</span>
+        <span class="tech-pill">Bash Scripting</span>
+      </div>
+    </div>
+
+     <div class="skill-card">
+      <div class="skill-icon uiux-icon"></div>
+      <h3 class="anchored">UI/UX</h3>
+      <p>I love to craft intuitive digital experiences by blending design and engineering. As NTUSU IT Committee Vice-Chairperson, I led Figma prototyping and redesigned portals. I also designed app interfaces under Credit Suisse mentorship and built visual dashboards with Tableau. I have also built multiple Figma based designs for websites and mobile apps for academic projects.</p>
+      <div class="tech-stack-label">Tech stack:</div>
+      <div class="tech-stack">
+        <span class="tech-pill">Figma</span>
+        <span class="tech-pill">Shadcn</span>
+        <span class="tech-pill">TailWindCSS</span>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<section id="experience" class="level2">
+<h2 class="anchored" data-anchor-id="experience">Experience</h2>
+<div class="experience-container">
+  <div class="experience-card">
+    <div class="experience-header">
+      <div class="experience-title">
+        <h3 class="anchored">Data Platform Intern</h3>
+        <p class="company">Hyundai Motor Group Innovation Centre Singapore</p>
+      </div>
+      <div class="experience-date">
+        <span class="date-badge">May 2024 – Aug 2024</span>
+      </div>
+    </div>
+    <div class="experience-content">
+      <ul class="experience-list">
+        <li>Engineered and optimized scalable data migration pipelines from Relational DBMS (PostgreSQL and Tibero) to Hadoop Data Lake using Python, PySpark, Apache Airflow, and Bash scripting</li>
+        <li>Developed RESTful APIs using Flask and PySpark to enable dynamic data retrieval and filtering from Hadoop Data Lake across multiple data formats</li>
+        <li>Designed and implemented a dynamic data synchronization pipeline integrating multiple database systems to PostgreSQL using PySpark, ensuring data consistency and reliability</li>
+        <li>Created technical documentation for data pipelines</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="experience-card">
+    <div class="experience-header">
+      <div class="experience-title">
+        <h3 class="anchored">Software Development (Data Application) Intern</h3>
+        <p class="company">Infineon Technologies</p>
+      </div>
+      <div class="experience-date">
+        <span class="date-badge">May 2023 – Dec 2023</span>
+      </div>
+    </div>
+    <div class="experience-content">
+      <ul class="experience-list">
+        <li>Collaborated closely with stakeholders and product engineers to identify data challenges and translate business requirements into robust data engineering solutions, resulting in enhanced Tableau dashboards and optimized data pipelines with new feature integrations</li>
+        <li>Developed Python scripts to automate extraction, transformation, and loading (ETL) process for production yield records into a SQL database using Jenkins, meeting stakeholder specifications, and creating an automated email notification system based on the data</li>
+        <li>Spearheaded development of a centralized Robotic Process Automation (RPA) solution from scratch utilizing UiPath and Python, resulting in an 90% reduction in human intervention across four critical software tools</li>
+        <li>Designed and implemented a Confluence-based chatbot using React, Flask, and SQL, significantly reducing time spent searching for and navigating through various software tools</li>
+        <li>Presented technical projects and dashboards to cross-functional teams, translating complex data workflows into business impact</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+<section id="education" class="level2">
+<h2 class="anchored" data-anchor-id="education">Education</h2>
+<div class="education-container">
+  <div class="education-card">
+    <div class="education-header">
+      <div class="education-title">
+        <h3 class="anchored">Nanyang Technological University, Singapore</h3>
+        <p class="degree">Bachelor of Computing, Data Science and Artificial Intelligence (Honors with Distinction)</p>
+      </div>
+      <div class="education-date">
+        <span class="date-badge">Aug 2021 – Jun 2025</span>
+      </div>
+    </div>
+    <div class="education-content">
+      <ul class="education-list">
+        <li>Vice chairperson, NTU Student Union IT Committee (Aug 2022 - Aug 2024)</li>
+        <li>Hon Gen Secretary, NTU Women In Tech (Aug 2022 - Aug 2023)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+<section id="projects" class="level2">
+<h2 class="anchored" data-anchor-id="projects">Projects</h2>
+<div class="projects-carousel">
+  <div class="projects-container">
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/machine_learning_projects/agent_core/AgentCore-icon3.png" alt="AI Agent Core Project">
+      </div>
+      <div class="project-content">
+        <h3 class="anchored">AI Agent Core</h3>
+        <p>Building a comprehensive customer support agent using Amazon BedRock AgentCore with advanced AI capabilities.</p>
+        <a href="./posts/machine_learning_projects/AgentCore.html" class="project-link">Read more</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/machine_learning_projects/graphrag_crs/graphrag_crs_architecture.png" alt="GraphRAG CRS Project">
+      </div>
+      <div class="project-content">
+        <h3 class="anchored">GraphRAG CRS</h3>
+        <p>Context-aware conversational recommendation system with knowledge-grounded prompt learning and graph-based retrieval.</p>
+        <a href="posts/machine_learning_projects/GraphRAG_CRS.qmd" class="project-link">Read more</a>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/homepage_img.png" alt="Data Visualization Project">
+      </div>
+      <div class="project-content">
+        <h3 class="anchored">Life Expectancy DataViz</h3>
+        <p>Interactive data visualization exploring global life expectancy trends and patterns across different regions.</p>
+        <a href="posts/machine_learning_projects/longetivity_dataviz.qmd" class="project-link">View project</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/homepage_img.png" alt="MindFul App">
+      </div>
+      <div class="project-content">
+        <h3 class="anchored">MindFul App</h3>
+        <p>Mobile application addressing unconscious bias through thoughtful design and user-centered approach.</p>
+        <a href="posts/app_dev/mindful.qmd" class="project-link">View project</a>
+      </div>
+    </div>
+    
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/design_portfolio/round_up/round_up_1.webp" alt="Round Up Design">
+      </div>
+      <div class="project-content">
+        <h3 class="anchored">RoundUp Finance App</h3>
+        <p>UI/UX design for a financial tracking app that helps users save money through innovative round-up features.</p>
+        <a href="./posts/design_portfolio/round_up.html" class="project-link">View design</a>
+      </div>
+  </div>
+
+    <div class="project-card">
+      <div class="project-image">
+        <img src="images/homepage_img.png" alt="Portfolio Website">
+      </div>
+      <div class="project-content">
+        <h3 class="anchored">Portfolio Website</h3>
+        <p>Personal portfolio website built with Quarto, featuring responsive design, modern aesthetics, and dynamic interactions.</p>
+        <a href="./index.html" class="project-link">Explore site</a>
+      </div>
+    </div>
+    
+    <div class="project-card more-projects-card">
+      <div class="more-projects-content">
+        <a href="./projects.html" class="more-projects-btn">More Projects →</a>
+      </div>
+    </div>
+  </div>
+</div>
+<section id="lets-connect" class="level3">
+<h3 class="anchored" data-anchor-id="lets-connect">Let’s Connect!</h3>
+<div class="contact-simple">
+  <a href="mailto:aarushi.nema02@gmail.com" class="contact-item">✉️ aarushi.nema02@gmail.com</a>
+  <a href="https://www.linkedin.com/in/aarushi-nema-64a006185/" class="contact-item" target="_blank">🔗 LinkedIn</a>
+  <a href="https://github.com/aarushi-nema" class="contact-item" target="_blank">🐙 GitHub</a>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var container = document.querySelector('.typewriter-line');
+    var textNode = document.querySelector('.typewriter-line .tw-text');
+    if(!container || !textNode) return;
+
+    // Plain text phrases to avoid HTML flicker while typing
+    var phrasesPlain = [
+      'Turning Data Into Decisions',
+      'AI Into Action',
+      'UI/UX Into Unforgettable Experiences'
+    ];
+    // Accent mappings applied only when holding at full text
+    function accentify(text){
+      return text
+        .replace(/^Turning Data/, 'Turning <span class="accent">Data</span>')
+        .replace(/^AI/, '<span class="accent">AI</span>')
+        .replace(/^UI\/UX/, '<span class="accent">UI/UX</span>');
+    }
+
+    // Stabilize width to prevent layout shift when empty
+    var maxLen = phrasesPlain.reduce((m,s)=> Math.max(m, s.length), 0);
+    container.style.minWidth = 'ch'.replace('ch', maxLen);
+    container.style.display = 'inline-block';
+
+    var i=0, j=0, deleting=false;
+    function setText(slice){ textNode.textContent = slice; }
+    function setFullWithAccent(str){ container.querySelector('.tw-text').innerHTML = accentify(str); }
+
+    function step(){
+      var current = phrasesPlain[i];
+      if(!deleting){
+        j++;
+        setText(current.slice(0,j));
+        if(j === current.length){
+          setFullWithAccent(current);
+          deleting = true; 
+          return setTimeout(step, 900);
+        }
+        return setTimeout(step, 55);
+      } else {
+        j--;
+        setText(current.slice(0,j));
+        if(j === 0){ deleting=false; i=(i+1)%phrasesPlain.length; return setTimeout(step, 450); }
+        return setTimeout(step, 35);
+      }
+    }
+    step();
+  });
+</script>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1758589419732" data-listing-reading-time-sort="5" data-listing-word-count-sort="826">
-<div class="thumbnail"><a href="./posts/learning/activeloop_course/01_langchain101.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/learning/activeloop_course/01_langchain101.html" class="no-external">LangChain101</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/learning/activeloop_course/01_langchain101.html" class="no-external">
-<strong>Author:</strong> Aarushi Nema<br>
-<strong>Date:</strong> 2024<br>
-<strong>Tags:</strong> LangChain, LLM, Introduction, Fundamentals, AI, NLP, Machine Learning, Deep Learning, Token Distribution, Finetuning, Prompting<br>
-<strong>Categori…</strong><br><strong></strong>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/learning/activeloop_course/01_langchain101.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1758589287876" data-listing-reading-time-sort="2" data-listing-word-count-sort="278">
-<div class="thumbnail"><a href="./posts/learning/activeloop_course/02_LLMs.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/learning/activeloop_course/02_LLMs.html" class="no-external">Large Language Models and LangChain</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/learning/activeloop_course/02_LLMs.html" class="no-external">
-<strong>Author:</strong> Aarushi Nema<br>
-<strong>Date:</strong> 2024<br>
-<strong>Tags:</strong> Large Language Models, LLMs, LangChain, Deep Learning, NLP, AI, Machine Learning, Parameters, Token Distribution, Finetuning…<br><strong></strong><br><strong></strong>
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/learning/activeloop_course/02_LLMs.html" class="no-external">
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="TWFjaGluZSUyMExlYXJuaW5nJTJDQWdlbnRpYyUyMEFJJTJDQVdT" data-listing-date-sort="1758038400000" data-listing-file-modified-sort="1758333890183" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="970">
-<div class="thumbnail"><a href="./posts/machine_learning_projects/AgentCore.html" class="no-external">
-
-<p class="card-img-top"><img src="images/machine_learning_projects/agent_core/AgentCore-icon3.png"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/machine_learning_projects/AgentCore.html" class="no-external">Building a Customer Support Agent Using Amazon BedRock AgentCore</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QWdlbnRpYyUyMEFJ'); return false;">Agentic AI</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('QVdT'); return false;">AWS</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/machine_learning_projects/AgentCore.html" class="no-external">
-This project is part of the AWS Users Group Workshop on 17th September, 2025. The goal of the project is to build a comprehensive, production ready Customer Support Agent…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/machine_learning_projects/AgentCore.html" class="no-external">
-<div class="listing-date">
-Sep 17, 2025
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="RGVzaWduJTIwUG9ydGZvbGlv" data-listing-date-sort="1757433600000" data-listing-file-modified-sort="1758587944479" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="./posts/design_portfolio/c4t.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/design_portfolio/c4t.html" class="no-external">C4T Energy Mobile App</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGVzaWduJTIwUG9ydGZvbGlv'); return false;">Design Portfolio</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/design_portfolio/c4t.html" class="no-external">
-
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/design_portfolio/c4t.html" class="no-external">
-<div class="listing-date">
-Sep 10, 2025
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="TWFjaGluZSUyMExlYXJuaW5n" data-listing-date-sort="1744646400000" data-listing-file-modified-sort="1758588321022" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="./posts/machine_learning_projects/Elo_Kaggle.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/machine_learning_projects/Elo_Kaggle.html" class="no-external">Kaggle - Elo Merchant Category Recommendation</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/machine_learning_projects/Elo_Kaggle.html" class="no-external">
-
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/machine_learning_projects/Elo_Kaggle.html" class="no-external">
-<div class="listing-date">
-Apr 15, 2025
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="RGF0YSUyMFZpc3VhbGl6YXRpb24=" data-listing-date-sort="1734192000000" data-listing-file-modified-sort="1758295104323" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
-<div class="thumbnail"><a href="./posts/machine_learning_projects/Longetivity_dataviz.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/machine_learning_projects/Longetivity_dataviz.html" class="no-external">Data Visualization: A Global Journey Through Life Expectancy</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFZpc3VhbGl6YXRpb24='); return false;">Data Visualization</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/machine_learning_projects/Longetivity_dataviz.html" class="no-external">
-This project explores global life expectancy trends through interactive data visualizations.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/machine_learning_projects/Longetivity_dataviz.html" class="no-external">
-<div class="listing-date">
-Dec 15, 2024
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="TWFjaGluZSUyMExlYXJuaW5n" data-listing-date-sort="1713110400000" data-listing-file-modified-sort="1758588249434" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="./posts/machine_learning_projects/nndl.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/machine_learning_projects/nndl.html" class="no-external">Image-based Gender Classification</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TWFjaGluZSUyMExlYXJuaW5n'); return false;">Machine Learning</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/machine_learning_projects/nndl.html" class="no-external">
-
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/machine_learning_projects/nndl.html" class="no-external">
-<div class="listing-date">
-Apr 15, 2024
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="QXBwJTIwRGV2ZWxvcG1lbnQ=" data-listing-date-sort="1689350400000" data-listing-file-modified-sort="1758588116660" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="11">
-<div class="thumbnail"><a href="./posts/full_stack/mindful.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/full_stack/mindful.html" class="no-external">MindScope: Unconsious Bias</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('QXBwJTIwRGV2ZWxvcG1lbnQ='); return false;">App Development</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/full_stack/mindful.html" class="no-external">
-This project explores global life expectancy trends through interactive data visualizations.
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/full_stack/mindful.html" class="no-external">
-<div class="listing-date">
-Jul 15, 2023
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="RGVzaWduJTIwUG9ydGZvbGlv" data-listing-date-sort="1688140800000" data-listing-file-modified-sort="1758588104853" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="./posts/design_portfolio/mindful.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/design_portfolio/mindful.html" class="no-external">MindScope - Mitigating Unconscious Bias</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGVzaWduJTIwUG9ydGZvbGlv'); return false;">Design Portfolio</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/design_portfolio/mindful.html" class="no-external">
-
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/design_portfolio/mindful.html" class="no-external">
-<div class="listing-date">
-Jul 1, 2023
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="9" data-categories="RGVzaWduJTIwUG9ydGZvbGlv" data-listing-date-sort="1676995200000" data-listing-file-modified-sort="1757925490891" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="223">
-<div class="thumbnail"><a href="./posts/design_portfolio/round_up.html" class="no-external">
-
-<p class="card-img-top"><img src="images/design_portfolio/round_up/img_01.webp"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/design_portfolio/round_up.html" class="no-external">RoundUp: Finance Tracking App</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGVzaWduJTIwUG9ydGZvbGlv'); return false;">Design Portfolio</div>
-
-</div>
-<div class="delink listing-description"><a href="./posts/design_portfolio/round_up.html" class="no-external">
-This project was part of my university course “Venturing into Entrepreneurship.” This was a group project so shout out to my wonderful team members: Prajwal Jagadeesh Kori…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/design_portfolio/round_up.html" class="no-external">
-<div class="listing-date">
-Feb 22, 2023
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
