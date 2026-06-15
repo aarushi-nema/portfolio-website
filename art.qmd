@@ -1,9 +1,31 @@
 ---
-title: "Art Gallery"
+pagetitle: "Art Gallery"
 page-layout: full
+title-block-banner: false
+format:
+  html:
+    css:
+      - styles.css
+      - art.css
 ---
 
-::: {style="display: grid;grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));grid-gap: 1em;"}
+```{=html}
+<main class="art-page">
+  <section class="art-hero">
+    <div>
+      <p class="art-kicker">Sketchbook</p>
+      <h1>Portraits, studies, and small visual experiments.</h1>
+      <p>A gallery of drawings and sketches that sit alongside my technical work: more tactile, more observational, and just as curious.</p>
+    </div>
+    <div class="art-stats" aria-label="Gallery statistics">
+      <div><strong>59</strong><span>pieces</span></div>
+      <div><strong>Graphite</strong><span>primary medium</span></div>
+      <div><strong>Studies</strong><span>portraits & forms</span></div>
+    </div>
+  </section>
+```
+
+::: {.art-grid}
 
 ![](./images/art/sketch_53.jpg){group="my-gallery"}
 
@@ -124,3 +146,7 @@ page-layout: full
 ![](./images/art/sketch_03.webp){group="my-gallery"}
 
 :::
+
+```{=html}
+</main>
+```
