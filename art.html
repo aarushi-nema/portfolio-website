@@ -70,6 +70,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="art.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -126,28 +127,25 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Art Gallery</h1>
-</div>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta column-page">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div style="display: grid;grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));grid-gap: 1em;">
+<main class="art-page">
+  <section class="art-hero">
+    <div>
+      <p class="art-kicker">Sketchbook</p>
+      <h1>Portraits, studies, and small visual experiments.</h1>
+      <p>A gallery of drawings and sketches that sit alongside my technical work: more tactile, more observational, and just as curious.</p>
+    </div>
+    <div class="art-stats" aria-label="Gallery statistics">
+      <div><strong>59</strong><span>pieces</span></div>
+      <div><strong>Graphite</strong><span>primary medium</span></div>
+      <div><strong>Studies</strong><span>portraits &amp; forms</span></div>
+    </div>
+  </section>
+<div class="art-grid">
 <p><img src="./images/art/sketch_53.jpg" class="img-fluid" data-group="my-gallery"></p>
 <p><img src="./images/art/sketch_54.jpg" class="img-fluid" data-group="my-gallery"></p>
 <p><img src="./images/art/sketch_55.jpg" class="img-fluid" data-group="my-gallery"></p>
@@ -208,6 +206,7 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="./images/art/sketch_02.webp" class="img-fluid" data-group="my-gallery"></p>
 <p><img src="./images/art/sketch_03.webp" class="img-fluid" data-group="my-gallery"></p>
 </div>
+</main>
 
 
 
@@ -285,7 +284,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/aarushi-nema\.github\.io\/portfolio-website\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

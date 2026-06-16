@@ -29,8 +29,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -69,72 +67,10 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-<style>
-body {
-  color: white;
-}
-</style>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="design.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -191,111 +127,106 @@ window.Quarto = {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Design Portfolio</h1>
-</div>
-
-
-
-<div class="quarto-title-meta column-page">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
 
+<main class="design-page">
+  <section class="design-hero">
+    <div class="design-hero-copy">
+      <p class="design-kicker">Product design</p>
+      <h1>Interfaces shaped around clarity, trust, and useful action.</h1>
+      <p>
+        Selected UI/UX work across financial tools, civic platforms, energy experiences, and bias-awareness products.
+      </p>
+      <div class="design-tags" aria-label="Design focus areas">
+        <span>Mobile UX</span>
+        <span>Product Strategy</span>
+        <span>Figma</span>
+        <span>Dashboards</span>
+      </div>
+    </div>
+
+    <a class="design-hero-card" href="posts/design_portfolio/round_up.html">
+      <img src="images/design_portfolio/round_up/img_01.webp" alt="RoundUp finance app screens">
+      <div>
+        <span>Featured case study</span>
+        <strong>RoundUp Finance App</strong>
+      </div>
+    </a>
+  </section>
+
+  <section class="design-showcase" aria-label="Featured design projects">
+    <a class="design-case design-case-large" href="posts/design_portfolio/round_up.html">
+      <div class="design-case-media">
+        <img src="images/design_portfolio/round_up/img_03.webp" alt="RoundUp finance app interface flow">
+      </div>
+      <div class="design-case-copy">
+        <div class="design-meta">
+          <span>Fintech</span>
+          <span>Mobile App</span>
+          <span>2023</span>
+        </div>
+        <h2 class="anchored">RoundUp: Finance Tracking App</h2>
+        <p>A mobile saving and investing concept that helps users build micro-savings through rounded-up purchases and low-friction investment flows.</p>
+      </div>
+    </a>
+
+    <a class="design-case" href="posts/design_portfolio/c4t.html">
+      <div class="design-case-copy">
+        <div class="design-meta">
+          <span>Energy</span>
+          <span>Mobile UX</span>
+          <span>2025</span>
+        </div>
+        <h2 class="anchored">C4T Energy Mobile App</h2>
+        <p>Clean mobile experience direction for an energy-focused product, emphasizing simple flows and clear user decisions.</p>
+      </div>
+    </a>
+
+    <a class="design-case" href="posts/design_portfolio/mindful.html">
+      <div class="design-case-copy">
+        <div class="design-meta">
+          <span>Social Impact</span>
+          <span>UX Research</span>
+          <span>2023</span>
+        </div>
+        <h2 class="anchored">MindScope: Mitigating Unconscious Bias</h2>
+        <p>Design exploration for a bias-awareness mobile experience that makes reflection, learning, and behavior change feel approachable.</p>
+      </div>
+    </a>
+  </section>
+
+  <section class="design-process" aria-label="Design process">
+    <div class="section-heading">
+      <p class="design-kicker">How I design</p>
+      <h2 class="anchored">From ambiguous brief to usable flow</h2>
+    </div>
+
+    <div class="process-grid">
+      <div class="process-card">
+        <span>01</span>
+        <h3 class="anchored">Frame the problem</h3>
+        <p>Clarify user needs, business goals, constraints, and success metrics before jumping into screens.</p>
+      </div>
+      <div class="process-card">
+        <span>02</span>
+        <h3 class="anchored">Map the flow</h3>
+        <p>Translate messy requirements into journey maps, task paths, content hierarchy, and interaction states.</p>
+      </div>
+      <div class="process-card">
+        <span>03</span>
+        <h3 class="anchored">Prototype and refine</h3>
+        <p>Build visual systems and interactive prototypes, then iterate with feedback from users and stakeholders.</p>
+      </div>
+    </div>
+  </section>
+</main>
 
 
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="RGVzaWduJTIwUG9ydGZvbGlv" data-listing-date-sort="1757433600000" data-listing-file-modified-sort="1758587944479" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="./posts/design_portfolio/c4t.html" class="no-external">
 
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/design_portfolio/c4t.html" class="no-external">C4T Energy Mobile App</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/design_portfolio/c4t.html" class="no-external">
-
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/design_portfolio/c4t.html" class="no-external">
-<div class="listing-date">
-Sep 10, 2025
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="RGVzaWduJTIwUG9ydGZvbGlv" data-listing-date-sort="1688140800000" data-listing-file-modified-sort="1758588104853" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="./posts/design_portfolio/mindful.html" class="no-external">
-
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/design_portfolio/mindful.html" class="no-external">MindScope - Mitigating Unconscious Bias</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/design_portfolio/mindful.html" class="no-external">
-
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/design_portfolio/mindful.html" class="no-external">
-<div class="listing-date">
-Jul 1, 2023
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="RGVzaWduJTIwUG9ydGZvbGlv" data-listing-date-sort="1676995200000" data-listing-file-modified-sort="1757925490891" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="223">
-<div class="thumbnail"><a href="./posts/design_portfolio/round_up.html" class="no-external">
-
-<p class="card-img-top"><img src="images/design_portfolio/round_up/img_01.webp"  class="thumbnail-image card-img"/></p>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="./posts/design_portfolio/round_up.html" class="no-external">RoundUp: Finance Tracking App</a>
-</h3>
-<div class="delink listing-description"><a href="./posts/design_portfolio/round_up.html" class="no-external">
-This project was part of my university course “Venturing into Entrepreneurship.” This was a group project so shout out to my wonderful team members: Prajwal Jagadeesh Kori…
-</a></div>
-</div>
-<div class="metadata">
-<a href="./posts/design_portfolio/round_up.html" class="no-external">
-<div class="listing-date">
-Feb 22, 2023
-</div>
-<div class="listing-author">
-Aarushi Nema
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -369,7 +300,7 @@ Aarushi Nema
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/aarushi-nema\.github\.io\/portfolio-website\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
