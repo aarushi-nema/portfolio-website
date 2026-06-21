@@ -1,7 +1,158 @@
 ---
-title: "Image-based Gender Classification"
+title: "Image-Based Gender and Age Classification"
 author: "Aarushi Nema"
 date: "2024-04-15"
-categories: [Machine Learning]
+categories: [Machine Learning, Deep Learning, Computer Vision, TensorFlow]
 type: "machine_learning"
 ---
+
+```{=html}
+<style>
+#title-block-header { display: none; }
+</style>
+```
+
+```{=html}
+<section class="case-hero">
+  <p class="case-kicker">CZ4042 Neural Networks and Deep Learning</p>
+  <h1>Image-Based Gender and Age Classification</h1>
+  <p class="case-lede">
+    A computer vision project comparing a baseline CNN, an optimized CNN, and EfficientNet transfer learning for facial gender and age classification on the Adience dataset.
+  </p>
+  <div class="case-actions">
+    <a class="btn btn-light btn-sm" href="https://github.com/aarushi-nema/CZ4042-Neural-Networks-and-Deep-Learning-Project" target="_blank">GitHub repo</a>
+  </div>
+</section>
+
+<section class="case-stats" aria-label="Project highlights">
+  <div>
+    <strong>90.83%</strong>
+    <span>optimized CNN gender validation accuracy</span>
+  </div>
+  <div>
+    <strong>74.02%</strong>
+    <span>optimized CNN age validation accuracy</span>
+  </div>
+  <div>
+    <strong>83.13%</strong>
+    <span>EfficientNet gender validation accuracy</span>
+  </div>
+  <div>
+    <strong>Adience</strong>
+    <span>real-world face image benchmark</span>
+  </div>
+</section>
+```
+
+## Context
+
+This project explored image-based gender and age classification using facial images from the **Adience dataset**, a benchmark dataset commonly used for age and gender recognition under real-world conditions. The dataset is intentionally challenging: images vary in lighting, pose, expression, image quality, and occlusion.
+
+The project started from the CNN architecture proposed by Levi and Hassner for age and gender classification, then tested whether optimization techniques and transfer learning could improve generalization. The goal was not to build a production demographic system, but to study how architectural choices affect performance on a noisy computer vision benchmark.
+
+One important caveat: the dataset and project formulation use binary gender labels and age buckets. I treat this as a constrained academic classification task, not as a complete representation of identity.
+
+## What We Built
+
+We developed and compared three model families:
+
+- **Baseline CNN:** a reproduction of the Levi and Hassner-style CNN architecture with convolutional layers, max pooling, fully connected layers, dropout, and softmax outputs.
+- **Optimized CNN:** an improved CNN using batch normalization, dropout regularization, Adam optimization, learning-rate scheduling, early stopping, and model checkpointing.
+- **EfficientNet transfer learning:** an EfficientNetB5 model initialized with ImageNet weights, using a frozen backbone and additional pooling/dropout/classification layers.
+
+In the repository, these experiments are separated into `baseline_model.py`, `Optimized_Model.py`, and `efficient_net.ipynb` under the `CZ4042_codes` folder.
+
+The project supported two tasks:
+
+- **Gender classification:** binary classification based on the dataset labels.
+- **Age classification:** multiclass classification using parsed age ranges mapped into demographic age buckets.
+
+## Data Pipeline
+
+The preprocessing pipeline turned the raw Adience metadata and image files into TensorFlow-ready inputs:
+
+- Removed incomplete or unknown gender labels.
+- Normalized image paths from folder ID, user ID, face ID, and image names.
+- Encoded gender labels as numeric classes.
+- Parsed age values and age ranges into ten age categories.
+- Loaded and resized face images to `128 x 128`.
+- Normalized image values for model input.
+- Split data into training and testing sets with an `80:20` ratio.
+- Converted image arrays into TensorFlow tensors.
+
+This was the practical core of the project: before comparing models, the data had to be cleaned, standardized, and shaped into a form that the neural networks could train on reliably.
+
+## Modeling Approach
+
+The baseline CNN gave us a reference point, but it showed signs of overfitting: training accuracy rose very high while validation performance lagged, especially for age classification.
+
+The optimized CNN was designed to address that:
+
+- **Batch normalization** stabilized activations and helped training converge more reliably.
+- **Dropout** reduced dependency between neurons and helped control overfitting.
+- **Adam** provided adaptive learning rates during optimization.
+- **Learning-rate scheduling** reduced the learning rate when validation loss plateaued.
+- **Early stopping and checkpoints** preserved the best model weights and avoided unnecessary training once validation performance stopped improving.
+
+For transfer learning, we tested **EfficientNetB5** with ImageNet weights. EfficientNet was chosen because it balances depth, width, and image resolution through compound scaling, making it a strong architecture for image classification tasks. Due to compute limits, we trained with `128 x 128` images rather than the larger resolution recommended in the EfficientNet paper.
+
+## Results
+
+```{=html}
+<div class="case-table-wrap">
+  <table class="case-table">
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Final Training Result</th>
+        <th>Validation Result</th>
+        <th>Takeaway</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Baseline CNN</td>
+        <td>99.45% gender accuracy, 96.72% age accuracy</td>
+        <td>80.49% gender accuracy, 48.01% age accuracy</td>
+        <td>Strong memorization, weaker generalization, especially for age.</td>
+      </tr>
+      <tr>
+        <td>Optimized CNN</td>
+        <td>99.36% gender accuracy, 98.39% age accuracy</td>
+        <td>90.83% gender accuracy, 74.02% age accuracy</td>
+        <td>Best overall validation performance across both tasks.</td>
+      </tr>
+      <tr>
+        <td>EfficientNetB5 Transfer Learning</td>
+        <td>79.24% gender accuracy</td>
+        <td>83.13% gender accuracy</td>
+        <td>Improved generalization over the baseline gender model, but constrained by image size and compute limits.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```
+
+The optimized CNN produced the strongest overall results, improving gender validation accuracy from **80.49% to 90.83%** and age validation accuracy from **48.01% to 74.02%** compared with the baseline. EfficientNet transfer learning also improved gender validation performance over the baseline, but it was limited by the smaller input resolution and available compute.
+
+## What I Learned
+
+This project made the overfitting problem very tangible. The baseline CNN achieved extremely high training accuracy, but that did not translate into equally strong validation performance. Adding batch normalization, dropout, learning-rate scheduling, early stopping, and checkpointing mattered because they changed how the model learned, not just how large the model was.
+
+It also clarified the trade-off between transfer learning and practical constraints. EfficientNet is a stronger architecture in principle, but using it well requires enough memory, appropriate image resolution, and stable training infrastructure. In our case, Colab, SCSE GPU access, and local machines all imposed limits, so the most reliable improvement came from optimizing the CNN pipeline we could train consistently.
+
+## Limitations and Future Work
+
+The main limitation was compute. EfficientNetB5 ideally expects larger input images, but training at higher resolutions caused repeated crashes or timeouts. We also attempted k-fold cross-validation, but resource limits prevented us from producing meaningful results.
+
+Future extensions could include:
+
+- Real-time video-based gender and age classification.
+- Testing robustness on faces with stronger pose, lighting, and occlusion variation.
+- Extending experiments to non-photographic images such as sketches or cartoons.
+- Evaluating fairness and error patterns across demographic subgroups before considering any real-world deployment.
+
+## Project Link
+
+- [GitHub repository](https://github.com/aarushi-nema/CZ4042-Neural-Networks-and-Deep-Learning-Project)
+- [Project code folder](https://github.com/aarushi-nema/CZ4042-Neural-Networks-and-Deep-Learning-Project/tree/main/CZ4042_codes)

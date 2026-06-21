@@ -97,10 +97,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./design_portfolio.html"> 
-<span class="menu-text">Design Portfolio</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./art.html"> 
 <span class="menu-text">Art</span></a>
   </li>  
@@ -233,7 +229,7 @@ Hi! I am <span class="accent">Aarushi</span>
   <div class="experience-card">
     <div class="experience-header">
       <div class="experience-title">
-        <h3 class="anchored">Audit &amp; Assurance Technology Analyst</h3>
+        <h3 class="anchored">Data Analyst, IT Data &amp; Analytics</h3>
         <p class="company">Deloitte</p>
       </div>
       <div class="experience-date">
@@ -242,11 +238,10 @@ Hi! I am <span class="accent">Aarushi</span>
     </div>
     <div class="experience-content">
       <ul class="experience-list">
-        <li>Built GenAI-powered audit risk newsfeed automation using n8n, RSS feeds, OpenAI APIs, JavaScript, and sector-based filtering logic to surface audit-relevant risk signals across industries</li>
-        <li>Designed and developed GenAI frontend interfaces for SEA Audit and Assurance use cases, including financial statement preparation, knowledge retrieval, chat interfaces, and dynamic content sections using HTML, TailwindCSS, and JavaScript</li>
-        <li>Optimized Python scripts with multiprocessing to process large-scale sports-betting transaction datasets, incorporating UAT feedback to improve accuracy, performance, and stakeholder validation</li>
-        <li>Developed Python, OCR, SQL, and ETL workflows for XBRL-to-FS comparison, rent roll automation, journal entry testing, Omnia data transformations, revenue recomputation, procurement testing, and audit report preparation</li>
-        <li>Built and refreshed Tableau, Power BI, Power Apps, and Power Automate solutions for dashboarding, audit analytics, and engagement delivery</li>
+        <li>Developed SQL, Python, Excel, and Microsoft Power Platform workflows across 10+ Audit &amp; Assurance engagements to automate revenue recomputation, invoice/vendor reconciliation, journal entry testing, variance analysis, exception flagging, financial statement and XBRL reconciliation, and dashboard data preparation</li>
+        <li>Built Power BI and Tableau dashboards connected to SQL, Power Query, and Excel sources across 5+ Audit &amp; Assurance engagements, enabling stakeholders to drill down into revenue variances, exception flags, control implementation status, risk indicators, and testing lifecycle progress</li>
+        <li>Developed AI-enabled automation and frontend solutions, including an n8n-based sector and client news monitoring workflow that retrieved RSS articles, used LLMs to identify top relevant news and generate WhatsApp-ready summaries, and AWS-hosted frontend interfaces for internal chatbot, balance sheet / P&amp;L variance analysis, and automated financial statement preparation tools</li>
+        <li>Implemented internal automation and GRC solutions using Power Apps and Power Automate, digitizing audit workflows, standardizing data collection, and supporting governance, risk, and compliance tracking</li>
       </ul>
     </div>
   </div>
@@ -265,8 +260,6 @@ Hi! I am <span class="accent">Aarushi</span>
       <ul class="experience-list">
         <li>Engineered and optimized scalable data migration pipelines from Relational DBMS (PostgreSQL and Tibero) to Hadoop Data Lake using Python, PySpark, Apache Airflow, and Bash scripting</li>
         <li>Developed RESTful APIs using Flask and PySpark to enable dynamic data retrieval and filtering from Hadoop Data Lake across multiple data formats</li>
-        <li>Designed and implemented a dynamic data synchronization pipeline integrating multiple database systems to PostgreSQL using PySpark, ensuring data consistency and reliability</li>
-        <li>Created technical documentation for data pipelines</li>
       </ul>
     </div>
   </div>
@@ -283,11 +276,9 @@ Hi! I am <span class="accent">Aarushi</span>
     </div>
     <div class="experience-content">
       <ul class="experience-list">
-        <li>Collaborated closely with stakeholders and product engineers to identify data challenges and translate business requirements into robust data engineering solutions, resulting in enhanced Tableau dashboards and optimized data pipelines with new feature integrations</li>
-        <li>Developed Python scripts to automate extraction, transformation, and loading (ETL) process for production yield records into a SQL database using Jenkins, meeting stakeholder specifications, and creating an automated email notification system based on the data</li>
-        <li>Spearheaded development of a centralized Robotic Process Automation (RPA) solution from scratch utilizing UiPath and Python, resulting in an 90% reduction in human intervention across four critical software tools</li>
+        <li>Collaborated with stakeholders and product engineers to address production data challenges, enhancing Tableau dashboards and developing Python ETL scripts to automate production yield record loading into a SQL database</li>
+        <li>Spearheaded development of a centralized Robotic Process Automation (RPA) solution utilizing UiPath and Python, resulting in a 90% reduction in human intervention across four critical software tools</li>
         <li>Designed and implemented a Confluence-based chatbot using React, Flask, and SQL, significantly reducing time spent searching for and navigating through various software tools</li>
-        <li>Presented technical projects and dashboards to cross-functional teams, translating complex data workflows into business impact</li>
       </ul>
     </div>
   </div>
@@ -315,79 +306,103 @@ Hi! I am <span class="accent">Aarushi</span>
   </div>
 </div>
 </section>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<div class="publication-grid">
+  <a class="publication-card" href="posts/publications/graphrag-crs.html">
+    <div class="publication-card-top">
+      <span class="publication-type">PRICAI 2025</span>
+      <span class="publication-year">Springer Nature</span>
+    </div>
+    <h3 class="anchored">Context-Aware and Knowledge-Grounded Conversational Recommendation with Prompt Learning</h3>
+    <p>Research on improving conversational recommender systems with context awareness, knowledge grounding, and prompt learning.</p>
+    <span class="publication-link">Read paper summary</span>
+  </a>
+
+  <a class="publication-card" href="posts/publications/encoding-values.html">
+    <div class="publication-card-top">
+      <span class="publication-type">NeurIPS 2025 Creative AI Track</span>
+      <span class="publication-year">OpenReview</span>
+    </div>
+    <h3 class="anchored">Encoding Values: Injecting Morality into Machines via Prompt-Conditioned Moral Frames</h3>
+    <p>Work exploring prompt-conditioned moral framing as a way to steer AI systems toward value-sensitive responses.</p>
+    <span class="publication-link">Read paper summary</span>
+  </a>
+</div>
+</section>
 <section id="projects" class="level2">
 <h2 class="anchored" data-anchor-id="projects">Projects</h2>
 <div class="projects-carousel">
   <div class="projects-container">
-    <div class="project-card">
+    <div class="project-card is-active" data-home-project-card="">
       <div class="project-image">
-        <img src="images/machine_learning_projects/agent_core/AgentCore-icon3.png" alt="AI Agent Core Project">
+        <img src="images/project_thumbnails/elo-kaggle.png" alt="Kaggle Elo merchant category recommendation project thumbnail">
       </div>
       <div class="project-content">
-        <h3 class="anchored">AI Agent Core</h3>
-        <p>Building a comprehensive customer support agent using Amazon BedRock AgentCore with advanced AI capabilities.</p>
-        <a href="./posts/machine_learning_projects/AgentCore.html" class="project-link">Read more</a>
+        <h3 class="anchored">Kaggle: Elo Merchant Recommendation</h3>
+        <p>Top 3.2% Kaggle solution using feature engineering, LightGBM, and outlier-aware blending.</p>
+        <a href="posts/machine_learning_projects/Elo_Kaggle.html" class="project-link">View project</a>
       </div>
     </div>
     
-    <div class="project-card">
+    <div class="project-card is-active" data-home-project-card="">
       <div class="project-image">
         <img src="images/machine_learning_projects/graphrag_crs/graphrag_crs_architecture.png" alt="GraphRAG CRS Project">
       </div>
       <div class="project-content">
         <h3 class="anchored">GraphRAG CRS</h3>
         <p>Context-aware conversational recommendation system with knowledge-grounded prompt learning and graph-based retrieval.</p>
-        <a href="posts/machine_learning_projects/GraphRAG_CRS.qmd" class="project-link">Read more</a>
+        <a href="posts/publications/graphrag-crs.html" class="project-link">Read paper summary</a>
       </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card is-active" data-home-project-card="">
       <div class="project-image">
         <img src="images/homepage_img.png" alt="Data Visualization Project">
       </div>
       <div class="project-content">
         <h3 class="anchored">Life Expectancy DataViz</h3>
         <p>Interactive data visualization exploring global life expectancy trends and patterns across different regions.</p>
-        <a href="posts/machine_learning_projects/longetivity_dataviz.qmd" class="project-link">View project</a>
+        <a href="posts/machine_learning_projects/Longetivity_dataviz.html" class="project-link">View project</a>
       </div>
     </div>
     
-    <div class="project-card">
+    <div class="project-card is-active" data-home-project-card="">
       <div class="project-image">
-        <img src="images/homepage_img.png" alt="MindFul App">
+        <img src="images/project_thumbnails/encoding-values.png" alt="Encoding values publication thumbnail">
       </div>
       <div class="project-content">
-        <h3 class="anchored">MindFul App</h3>
-        <p>Mobile application addressing unconscious bias through thoughtful design and user-centered approach.</p>
-        <a href="posts/app_dev/mindful.qmd" class="project-link">View project</a>
+        <h3 class="anchored">Encoding Values</h3>
+        <p>Research summary on prompt-conditioned moral frames for steering AI systems toward value-sensitive responses.</p>
+        <a href="posts/publications/encoding-values.html" class="project-link">Read paper summary</a>
       </div>
     </div>
     
-    <div class="project-card">
+    <div class="project-card is-active" data-home-project-card="">
       <div class="project-image">
-        <img src="images/design_portfolio/round_up/round_up_1.webp" alt="Round Up Design">
+        <img src="images/project_thumbnails/nndl-classification.png" alt="Image-based gender and age classification project thumbnail">
       </div>
       <div class="project-content">
-        <h3 class="anchored">RoundUp Finance App</h3>
-        <p>UI/UX design for a financial tracking app that helps users save money through innovative round-up features.</p>
-        <a href="./posts/design_portfolio/round_up.html" class="project-link">View design</a>
+        <h3 class="anchored">Image-Based Gender Classification</h3>
+        <p>Deep learning classification study comparing CNN variants and transfer learning on facial image data.</p>
+        <a href="posts/machine_learning_projects/nndl.html" class="project-link">View project</a>
       </div>
-  </div>
+    </div>
 
-    <div class="project-card">
+    <div class="project-card" data-home-project-card="">
       <div class="project-image">
-        <img src="images/homepage_img.png" alt="Portfolio Website">
+        <img src="images/full_stack/mindscope/mindscope-screens.png" alt="MindScope app screen previews">
       </div>
       <div class="project-content">
-        <h3 class="anchored">Portfolio Website</h3>
-        <p>Personal portfolio website built with Quarto, featuring responsive design, modern aesthetics, and dynamic interactions.</p>
-        <a href="./index.html" class="project-link">Explore site</a>
+        <h3 class="anchored">MindScope App</h3>
+        <p>Mobile app concept for reflection, bias awareness, and more mindful everyday decision-making.</p>
+        <a href="posts/full_stack/mindful.html" class="project-link">View project</a>
       </div>
     </div>
     
     <div class="project-card more-projects-card">
       <div class="more-projects-content">
-        <a href="./projects.html" class="more-projects-btn">More Projects →</a>
+        <a href="projects.html" class="more-projects-btn">More Projects →</a>
       </div>
     </div>
   </div>
@@ -400,6 +415,22 @@ Hi! I am <span class="accent">Aarushi</span>
   <a href="https://github.com/aarushi-nema" class="contact-item" target="_blank">🐙 GitHub</a>
 </div>
 <script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var projectCards = Array.from(document.querySelectorAll('[data-home-project-card]'));
+    if(projectCards.length <= 5) return;
+
+    projectCards.forEach(function(card){
+      card.classList.remove('is-active');
+    });
+
+    projectCards
+      .sort(function(){ return Math.random() - 0.5; })
+      .slice(0, 5)
+      .forEach(function(card){
+        card.classList.add('is-active');
+      });
+  });
+
   document.addEventListener('DOMContentLoaded', function(){
     var container = document.querySelector('.typewriter-line');
     var textNode = document.querySelector('.typewriter-line .tw-text');

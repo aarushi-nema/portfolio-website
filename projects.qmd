@@ -15,19 +15,19 @@ format:
       <p class="projects-kicker">Selected work</p>
       <h1>Projects that turn messy ideas into working systems.</h1>
       <p class="projects-hero-text">
-        A curated mix of machine learning, data visualization, app development, and product design work.
+        A curated mix of machine learning, data visualization, app development, and research publications.
       </p>
       <div class="projects-filter-row" aria-label="Project categories">
         <span>Machine Learning</span>
         <span>Data Visualization</span>
         <span>App Development</span>
-        <span>UI/UX Design</span>
+        <span>Publications</span>
       </div>
     </div>
     <div class="projects-hero-panel" aria-label="Project highlights">
       <div>
-        <strong>8</strong>
-        <span>case studies</span>
+        <strong>6</strong>
+        <span>case studies + papers</span>
       </div>
       <div>
         <strong>4</strong>
@@ -40,50 +40,90 @@ format:
     </div>
   </section>
 
-  <section class="featured-projects" aria-label="Featured projects">
-    <a class="featured-project featured-project-large" href="posts/machine_learning_projects/AgentCore.html">
+  <section class="featured-projects featured-projects-random" aria-label="Featured projects">
+    <a class="featured-project compact is-active is-large" href="posts/machine_learning_projects/Longetivity_dataviz.html" data-featured-card>
       <div class="featured-media">
-        <img src="images/machine_learning_projects/agent_core/AgentCore-icon3.png" alt="AgentCore project illustration">
+        <img src="images/homepage_img.png" alt="Life expectancy data visualization preview">
       </div>
       <div class="featured-copy">
         <div class="project-meta">
-          <span>Agentic AI</span>
-          <span>AWS</span>
+          <span>Data Viz</span>
+          <span>Storytelling</span>
         </div>
-        <h2>Customer Support Agent with Amazon Bedrock AgentCore</h2>
-        <p>Production-oriented support agent prototype with Strands, memory, tools, and AWS AgentCore workflows.</p>
+        <h2>Global Life Expectancy DataViz</h2>
+        <p>Interactive exploration of worldwide longevity patterns across regions and time.</p>
       </div>
     </a>
 
-    <div class="featured-stack">
-      <a class="featured-project compact" href="posts/design_portfolio/round_up.html">
-        <div class="featured-media">
-          <img src="images/design_portfolio/round_up/img_01.webp" alt="RoundUp finance app design screens">
+    <a class="featured-project compact is-active is-small" href="posts/machine_learning_projects/Elo_Kaggle.html" data-featured-card>
+      <div class="featured-media">
+        <img src="images/project_thumbnails/elo-kaggle.png" alt="Elo merchant category recommendation preview">
+      </div>
+      <div class="featured-copy">
+        <div class="project-meta">
+          <span>Machine Learning</span>
+          <span>Kaggle</span>
         </div>
-        <div class="featured-copy">
-          <div class="project-meta">
-            <span>UI/UX</span>
-            <span>Fintech</span>
-          </div>
-          <h2>RoundUp Finance App</h2>
-          <p>Mobile product design for passive saving and micro-investing through rounded-up purchases.</p>
-        </div>
-      </a>
+        <h2>Kaggle: Elo Merchant Category Recommendation</h2>
+        <p>Top 3.2% Kaggle solution using feature engineering, LightGBM, and outlier-aware blending.</p>
+      </div>
+    </a>
 
-      <a class="featured-project compact" href="posts/machine_learning_projects/Longetivity_dataviz.html">
-        <div class="featured-media">
-          <img src="images/homepage_img.png" alt="Life expectancy data visualization preview">
+    <a class="featured-project compact is-active is-small" href="posts/publications/graphrag-crs.html" data-featured-card>
+      <div class="featured-media">
+        <img src="images/machine_learning_projects/graphrag_crs/graphrag_crs_architecture.png" alt="GraphRAG conversational recommendation architecture">
+      </div>
+      <div class="featured-copy">
+        <div class="project-meta">
+          <span>Publication</span>
+          <span>GraphRAG</span>
         </div>
-        <div class="featured-copy">
-          <div class="project-meta">
-            <span>Data Viz</span>
-            <span>Storytelling</span>
-          </div>
-          <h2>Global Life Expectancy DataViz</h2>
-          <p>Interactive exploration of worldwide longevity patterns across regions and time.</p>
+        <h2>Knowledge-Grounded Conversational Recommendation</h2>
+        <p>PRICAI paper on context-aware recommendation using graph retrieval and prompt learning.</p>
+      </div>
+    </a>
+
+    <a class="featured-project compact" href="posts/publications/encoding-values.html" data-featured-card>
+      <div class="featured-media">
+        <img src="images/project_thumbnails/encoding-values.png" alt="Encoding values publication preview">
+      </div>
+      <div class="featured-copy">
+        <div class="project-meta">
+          <span>Publication</span>
+          <span>Responsible AI</span>
         </div>
-      </a>
-    </div>
+        <h2>Encoding Values with Moral Frames</h2>
+        <p>NeurIPS Creative AI Track paper on prompt-conditioned moral steering for generative AI.</p>
+      </div>
+    </a>
+
+    <a class="featured-project compact" href="posts/machine_learning_projects/nndl.html" data-featured-card>
+      <div class="featured-media">
+        <img src="images/project_thumbnails/nndl-classification.png" alt="Image-based gender and age classification preview">
+      </div>
+      <div class="featured-copy">
+        <div class="project-meta">
+          <span>Computer Vision</span>
+          <span>TensorFlow</span>
+        </div>
+        <h2>Image-Based Gender and Age Classification</h2>
+        <p>CNN and EfficientNet comparison for facial gender and age classification on Adience.</p>
+      </div>
+    </a>
+
+    <a class="featured-project compact" href="posts/full_stack/mindful.html" data-featured-card>
+      <div class="featured-media">
+        <img src="images/full_stack/mindscope/mindscope-screens.png" alt="MindScope app screen previews">
+      </div>
+      <div class="featured-copy">
+        <div class="project-meta">
+          <span>App Development</span>
+          <span>Social Impact</span>
+        </div>
+        <h2>MindScope: Unconscious Bias</h2>
+        <p>Application concept and build work for helping people reflect on unconscious bias.</p>
+      </div>
+    </a>
   </section>
 
   <section class="project-archive" aria-label="All projects">
@@ -99,18 +139,28 @@ format:
           <span class="archive-year">2025</span>
         </div>
         <h3>Kaggle: Elo Merchant Category Recommendation</h3>
-        <p>Predictive modeling work for customer loyalty and merchant recommendation signals.</p>
+        <p>Top 3.2% Kaggle solution using feature engineering, LightGBM, outlier-aware blending, and transaction behavior modeling.</p>
         <span class="archive-link">View project</span>
       </a>
 
-      <a class="archive-card" href="posts/design_portfolio/c4t.html">
+      <a class="archive-card" href="posts/publications/graphrag-crs.html">
         <div class="archive-card-top">
-          <span class="archive-type">UI/UX Design</span>
+          <span class="archive-type">Publication</span>
           <span class="archive-year">2025</span>
         </div>
-        <h3>C4T Energy Mobile App</h3>
-        <p>Mobile app interface work focused on clean flows for an energy-focused product experience.</p>
-        <span class="archive-link">View design</span>
+        <h3>Context-Aware Knowledge-Grounded Conversational Recommendation</h3>
+        <p>PRICAI 2025 paper on conversational recommendation with context awareness, knowledge grounding, and prompt learning.</p>
+        <span class="archive-link">Read summary</span>
+      </a>
+
+      <a class="archive-card" href="posts/publications/encoding-values.html">
+        <div class="archive-card-top">
+          <span class="archive-type">Publication</span>
+          <span class="archive-year">2025</span>
+        </div>
+        <h3>Encoding Values: Prompt-Conditioned Moral Frames</h3>
+        <p>NeurIPS 2025 Creative AI Track paper on steering generative AI outputs through explicit moral framing.</p>
+        <span class="archive-link">Read summary</span>
       </a>
 
       <a class="archive-card" href="posts/machine_learning_projects/nndl.html">
@@ -118,8 +168,8 @@ format:
           <span class="archive-type">Machine Learning</span>
           <span class="archive-year">2024</span>
         </div>
-        <h3>Image-Based Gender Classification</h3>
-        <p>Computer vision classification project exploring neural network training and model evaluation.</p>
+        <h3>Image-Based Gender and Age Classification</h3>
+        <p>Computer vision case study comparing a baseline CNN, optimized CNN, and EfficientNet transfer learning on the Adience dataset.</p>
         <span class="archive-link">View project</span>
       </a>
 
@@ -133,16 +183,30 @@ format:
         <span class="archive-link">View project</span>
       </a>
 
-      <a class="archive-card" href="posts/design_portfolio/mindful.html">
-        <div class="archive-card-top">
-          <span class="archive-type">UI/UX Design</span>
-          <span class="archive-year">2023</span>
-        </div>
-        <h3>MindScope Design Case Study</h3>
-        <p>Design direction and interface thinking behind a bias-awareness mobile experience.</p>
-        <span class="archive-link">View design</span>
-      </a>
     </div>
   </section>
 </main>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function(){
+    var cards = Array.from(document.querySelectorAll('[data-featured-card]'));
+    if (cards.length <= 3) return;
+
+    cards.forEach(function(card){
+      card.classList.remove('is-active', 'is-large', 'is-small');
+    });
+
+    for (var i = cards.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = cards[i];
+      cards[i] = cards[j];
+      cards[j] = temp;
+    }
+
+    cards.slice(0, 3).forEach(function(card, index){
+      card.classList.add('is-active');
+      card.classList.add(index === 0 ? 'is-large' : 'is-small');
+    });
+  });
+</script>
 ```

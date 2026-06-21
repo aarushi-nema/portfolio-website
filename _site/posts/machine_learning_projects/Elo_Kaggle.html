@@ -98,10 +98,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../design_portfolio.html"> 
-<span class="menu-text">Design Portfolio</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../art.html"> 
 <span class="menu-text">Art</span></a>
   </li>  
@@ -135,6 +131,9 @@ ul.task-list li input[type="checkbox"] {
 <h1 class="title">Kaggle - Elo Merchant Category Recommendation</h1>
   <div class="quarto-categories">
     <div class="quarto-category">Machine Learning</div>
+    <div class="quarto-category">Feature Engineering</div>
+    <div class="quarto-category">LightGBM</div>
+    <div class="quarto-category">Kaggle</div>
   </div>
   </div>
 
@@ -164,8 +163,135 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<style>
+#title-block-header { display: none; }
+</style>
+<section class="case-hero">
+  <p class="case-kicker">Kaggle Competition / SC4000 Machine Learning</p>
+  <h1>Elo Merchant Category Recommendation</h1>
+  <p class="case-lede">
+    Predicting customer loyalty from high-volume credit card transaction data, with a focus on feature engineering, outlier-aware modeling, and disciplined validation.
+  </p>
+  <div class="case-actions">
+    <a class="btn btn-light btn-sm" href="https://www.kaggle.com/competitions/elo-merchant-category-recommendation" target="_blank">Kaggle competition</a>
+    <a class="btn btn-outline-light btn-sm" href="https://github.com/pareenakaur/SC4000-ML-Grp1/tree/main" target="_blank">GitHub repo</a>
+  </div>
+</section>
+
+<section class="case-stats" aria-label="Project highlights">
+  <div>
+    <strong>3.67373</strong>
+    <span>final Kaggle RMSE</span>
+  </div>
+  <div>
+    <strong>131 / 4,111</strong>
+    <span>submission rank</span>
+  </div>
+  <div>
+    <strong>Top 3.2%</strong>
+    <span>competition placement</span>
+  </div>
+  <div>
+    <strong>~3GB</strong>
+    <span>transaction data</span>
+  </div>
+</section>
+<section id="context" class="level2">
+<h2 class="anchored" data-anchor-id="context">Context</h2>
+<p>Elo is a Brazilian payment brand that works with merchants to run promotions. The competition asks a practical business question: can past purchase behavior predict a customer’s future loyalty score?</p>
+<p>The task was a regression problem evaluated with <strong>Root Mean Squared Error (RMSE)</strong>. The dataset included training and test card records, historical transactions, new merchant transactions, and merchant-level aggregate data. The challenge was not just model choice; the raw data was large, noisy, sparse in places, and highly transactional, so performance depended heavily on how well we converted purchase histories into useful customer-level signals.</p>
+<p>This was a group project for <strong>SC4000 Machine Learning</strong> at NTU. My primary contribution was <strong>feature engineering</strong>, along with the report and presentation materials.</p>
+</section>
+<section id="what-i-built" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-built">What I Built</h2>
+<p>My work focused on turning raw card and merchant transaction logs into model-ready customer features. The final pipeline combined:</p>
+<ul>
+<li><strong>Memory optimization</strong> for large transaction tables through numeric downcasting.</li>
+<li><strong>Categorical encoding</strong> for binary and ordinal fields such as <code>authorized_flag</code>, <code>category_1</code>, and <code>category_3</code>.</li>
+<li><strong>Missing value handling</strong> for transaction category fields and card activation dates.</li>
+<li><strong>Temporal features</strong> from purchase timestamps, including year, month, day of week, hour, week of year, quarter, and account activation timing.</li>
+<li><strong>Holiday proximity features</strong> for events such as Christmas, Valentine’s Day, Father’s Day, Children’s Day, and Black Friday.</li>
+<li><strong>Customer behavior aggregations</strong> such as transaction count, purchase amount summaries, installment summaries, recency, inter-purchase interval, and transaction history length.</li>
+<li><strong>Merchant diversity and dominance features</strong> such as unique merchant counts, merchant category breadth, city/state/subsector diversity, and modal-category dominance ratios.</li>
+<li><strong>Historical vs.&nbsp;new merchant comparison features</strong> to capture behavioral shifts between established spending patterns and recent new-merchant activity.</li>
+<li><strong>Weekend spending features</strong> to separate weekday and weekend transaction behavior.</li>
+<li><strong>RFM clustering experiments</strong> using recency, frequency, and monetary behavior to test whether customer segmentation improved generalization.</li>
+</ul>
+<p>The feature engineering code was organized into dedicated modules for aggregation, date, merchant, transaction, feature importance, and utility logic in the <a href="https://github.com/pareenakaur/SC4000-ML-Grp1/tree/main/feature_engineering">project repository</a>.</p>
+</section>
+<section id="modeling-approach" class="level2">
+<h2 class="anchored" data-anchor-id="modeling-approach">Modeling Approach</h2>
+<p>We used <strong>LightGBM</strong> as the core model because it performs well on high-dimensional tabular data and can train efficiently on large feature sets. The modeling process had three main parts:</p>
+<ol type="1">
+<li><p><strong>Feature selection:</strong> We used null-importance scoring to compare actual feature importance against randomized target permutations. Features with stronger gain-based evidence were retained for the main model. We also tested SHAP-based selection and Recursive Feature Elimination as alternatives.</p></li>
+<li><p><strong>Outlier strategy:</strong> The target distribution had a small but meaningful group of extreme negative outliers below <code>-30</code>. Instead of ignoring them, we trained a separate LightGBM outlier classifier and used its probabilities to guide post-processing and blending.</p></li>
+<li><p><strong>Ensembling and blending:</strong> We compared a baseline LightGBM model, no-outlier training, SHAP-selected features, RFE-selected features, RFM-enhanced features, threshold-based blending, and top-N replacement based on outlier likelihood.</p></li>
+</ol>
+</section>
+<section id="results" class="level2">
+<h2 class="anchored" data-anchor-id="results">Results</h2>
+<div class="case-table-wrap">
+  
+<table class="case-table caption-top table">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th">Model Variant</th>
+<th data-quarto-table-cell-role="th">What It Tested</th>
+<th data-quarto-table-cell-role="th">Test RMSE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Baseline LightGBM</td>
+<td>Gain-selected features with 7-fold cross-validation</td>
+<td>3.679</td>
+</tr>
+<tr class="even">
+<td>RFM-enhanced model</td>
+<td>Baseline features plus customer segmentation signals</td>
+<td>3.678</td>
+</tr>
+<tr class="odd">
+<td>SHAP-selected model</td>
+<td>Top 20 features by SHAP attribution</td>
+<td>3.696</td>
+</tr>
+<tr class="even">
+<td>RFE-selected model</td>
+<td>Top 20 features from recursive feature elimination</td>
+<td>3.693</td>
+</tr>
+<tr class="odd">
+<td>Threshold blending</td>
+<td>Prediction replacement using outlier probability cutoffs</td>
+<td>3.677</td>
+</tr>
+<tr class="even">
+<td>Top-N replacement</td>
+<td>Replace predictions for 25,000 most likely outlier cases</td>
+<td>3.673</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+<p>The best-performing submission used the <strong>top-N replacement strategy</strong>, reaching a Kaggle score of <strong>3.67373 RMSE</strong>. This placed the team <strong>131st out of 4,111 submissions</strong>, or roughly the <strong>top 3.2%</strong>.</p>
+</section>
+<section id="what-i-learned" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-learned">What I Learned</h2>
+<p>The biggest lesson was that stronger modeling did not always mean more complicated modeling. Some conceptually attractive additions, such as SHAP-only selection, RFE-only selection, and RFM clustering, did not outperform the gain-selected baseline. The best result came from a more pragmatic combination: strong transaction-level feature engineering, a stable LightGBM baseline, and careful outlier-aware blending.</p>
+<p>That was useful because it mirrored a real analytics problem: the hard part was not choosing a fancy model, but deciding which customer behaviors deserved to become features, which experiments genuinely improved validation performance, and which ideas added complexity without improving generalization.</p>
+</section>
+<section id="project-links" class="level2">
+<h2 class="anchored" data-anchor-id="project-links">Project Links</h2>
+<ul>
+<li><a href="https://www.kaggle.com/competitions/elo-merchant-category-recommendation">Kaggle competition</a></li>
+<li><a href="https://github.com/pareenakaur/SC4000-ML-Grp1/tree/main">GitHub repository</a></li>
+<li><a href="https://github.com/pareenakaur/SC4000-ML-Grp1/tree/main/feature_engineering">Feature engineering code</a></li>
+</ul>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

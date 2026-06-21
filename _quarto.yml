@@ -1,5 +1,13 @@
 project:
   type: website
+  render:
+    - "*.qmd"
+    - "*.md"
+    - "posts/**/*.qmd"
+    - "posts/**/*.ipynb"
+    - "code_files/**/*.ipynb"
+    - "!design_portfolio.qmd"
+    - "!posts/design_portfolio/**"
 
 website:
   title: "Aarushi Nema"
@@ -13,8 +21,6 @@ website:
         href: projects.qmd
       # - text: "Blog"
       #   href: blog.qmd
-      - text: "Design Portfolio"
-        href: design_portfolio.qmd
       - text: "Art"
         href: art.qmd
       # - text: "Podcast"

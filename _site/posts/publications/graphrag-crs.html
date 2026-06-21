@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Aarushi Nema">
-<meta name="dcterms.date" content="2023-07-01">
+<meta name="dcterms.date" content="2026-04-21">
 
-<title>MindScope - Mitigating Unconscious Bias – Aarushi Nema</title>
+<title>Context-Aware and Knowledge-Grounded Conversational Recommendation with Prompt Learning – Aarushi Nema</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -98,10 +98,6 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../design_portfolio.html"> 
-<span class="menu-text">Design Portfolio</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../art.html"> 
 <span class="menu-text">Art</span></a>
   </li>  
@@ -132,9 +128,12 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">MindScope - Mitigating Unconscious Bias</h1>
+<h1 class="title">Context-Aware and Knowledge-Grounded Conversational Recommendation with Prompt Learning</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Design Portfolio</div>
+    <div class="quarto-category">Publication</div>
+    <div class="quarto-category">Conversational AI</div>
+    <div class="quarto-category">Recommender Systems</div>
+    <div class="quarto-category">GraphRAG</div>
   </div>
   </div>
 
@@ -152,7 +151,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 1, 2023</p>
+      <p class="date">April 21, 2026</p>
     </div>
   </div>
   
@@ -164,8 +163,27 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p><img src="../../images/machine_learning_projects/graphrag_crs/graphrag_crs_architecture.png" class="img-fluid"></p>
+<section id="publication" class="level2">
+<h2 class="anchored" data-anchor-id="publication">Publication</h2>
+<p><strong>A. Nema</strong>, X. Zhou, A. J. Jillella, S. Zhao, and S. Liu. “Context-Aware and Knowledge-Grounded Conversational Recommendation with Prompt Learning.” In <em>PRICAI 2025: Trends in Artificial Intelligence</em>, Lecture Notes in Computer Science, Springer Nature.</p>
+<p><a href="https://link.springer.com/chapter/10.1007/978-981-95-7078-2_26">Read the Springer chapter</a></p>
+</section>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>This paper focuses on conversational recommender systems, where the challenge is not only predicting what a user might like, but doing so through a natural dialogue that remembers context and can explain recommendations. The proposed framework, GraphPromptCRS, combines recommendation and response generation with a frozen LLM while using soft prompt learning to encode task-specific signals without full model fine-tuning.</p>
+<p>The core idea is to use external knowledge and dialogue context together instead of treating each recommendation as an isolated prediction. A GraphRAG-based pipeline builds knowledge graphs from dialogue history, while a Community Prompt Enhancer captures topical user preferences. Experiments on the ReDial dataset show improvements in recommendation accuracy and conversational diversity against baselines.</p>
+</section>
+<section id="why-it-matters" class="level2">
+<h2 class="anchored" data-anchor-id="why-it-matters">Why It Matters</h2>
+<p>Conversational recommendation is useful in domains such as e-commerce, media discovery, travel planning, and service support, where users refine their needs over multiple turns. A system that can track intent, retrieve relevant knowledge, and generate grounded responses can feel less like a static search filter and more like a helpful assistant.</p>
+</section>
+<section id="portfolio-relevance" class="level2">
+<h2 class="anchored" data-anchor-id="portfolio-relevance">Portfolio Relevance</h2>
+<p>This project connects my interests in large language models, recommendation systems, retrieval, and user-centered AI. It also reflects the kind of applied AI work I enjoy most: systems that combine machine learning with usable interaction design and clear decision support.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
