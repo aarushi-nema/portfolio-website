@@ -6,4 +6,21 @@ categories: [Data Visualization]
 type: "data_viz"
 ---
 
-This project explores global life expectancy trends through interactive data visualizations.
+## Project Overview
+
+This data visualization project explores global life expectancy as an indicator of economic stability, public health outcomes, social conditions, and health equity. The analysis uses interactive visual storytelling to make regional and temporal longevity patterns easier to compare across countries and time.
+
+The project focuses on three core questions:
+
+- How has life expectancy changed across regions over time?
+- Which social, economic, and health factors appear connected to differences in lifespan?
+- How can visual analytics make global health inequality easier to understand for a wider audience?
+
+## What I Built
+
+The final work combines exploratory data analysis with a narrative visualization notebook. It presents regional trends, compares countries, and highlights the factors that may influence differences in life expectancy, turning a broad public-health dataset into a more interpretable story.
+
+## Links
+
+- [GitHub Repository](https://github.com/aarushi-nema/SC4024-Data-Visualization/)
+- [Project Presentation on YouTube](https://www.youtube.com/watch?v=QIZL31lYfx8)

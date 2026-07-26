@@ -41,7 +41,7 @@ format:
   </section>
 
   <section class="featured-projects featured-projects-random" aria-label="Featured projects">
-    <a class="featured-project compact is-active is-large" href="posts/machine_learning_projects/Longetivity_dataviz.html" data-featured-card>
+    <a class="featured-project compact is-active is-large" href="posts/machine_learning_projects/Longetivity_dataviz.html" data-featured-card data-featured-pin>
       <div class="featured-media">
         <img src="images/homepage_img.png" alt="Life expectancy data visualization preview">
       </div>
@@ -51,7 +51,7 @@ format:
           <span>Storytelling</span>
         </div>
         <h2>Global Life Expectancy DataViz</h2>
-        <p>Interactive exploration of worldwide longevity patterns across regions and time.</p>
+        <p>Interactive visual story on regional, economic, social, and health drivers of global longevity.</p>
       </div>
     </a>
 
@@ -133,6 +133,16 @@ format:
     </div>
 
     <div class="project-grid">
+      <a class="archive-card" href="posts/machine_learning_projects/Longetivity_dataviz.html">
+        <div class="archive-card-top">
+          <span class="archive-type">Data Visualization</span>
+          <span class="archive-year">2024</span>
+        </div>
+        <h3>Data Visualization: A Global Journey Through Life Expectancy</h3>
+        <p>Interactive visual analysis of regional, temporal, social, economic, and health factors shaping global life expectancy.</p>
+        <span class="archive-link">View project</span>
+      </a>
+
       <a class="archive-card" href="posts/machine_learning_projects/Elo_Kaggle.html">
         <div class="archive-card-top">
           <span class="archive-type">Machine Learning</span>
@@ -191,19 +201,25 @@ format:
   document.addEventListener('DOMContentLoaded', function(){
     var cards = Array.from(document.querySelectorAll('[data-featured-card]'));
     if (cards.length <= 3) return;
+    var pinnedCard = document.querySelector('[data-featured-pin]');
+    var rotatingCards = pinnedCard ? cards.filter(function(card){
+      return card !== pinnedCard;
+    }) : cards;
 
     cards.forEach(function(card){
       card.classList.remove('is-active', 'is-large', 'is-small');
     });
 
-    for (var i = cards.length - 1; i > 0; i--) {
+    for (var i = rotatingCards.length - 1; i > 0; i--) {
       var j = Math.floor(Math.random() * (i + 1));
-      var temp = cards[i];
-      cards[i] = cards[j];
-      cards[j] = temp;
+      var temp = rotatingCards[i];
+      rotatingCards[i] = rotatingCards[j];
+      rotatingCards[j] = temp;
     }
 
-    cards.slice(0, 3).forEach(function(card, index){
+    var selectedCards = pinnedCard ? [pinnedCard].concat(rotatingCards.slice(0, 2)) : rotatingCards.slice(0, 3);
+
+    selectedCards.forEach(function(card, index){
       card.classList.add('is-active');
       card.classList.add(index === 0 ? 'is-large' : 'is-small');
     });
