@@ -1,7 +1,0 @@
----
-title: "C4T Energy Mobile App"
-author: "Aarushi Nema"
-date: "2025-09-10"
-categories: [Design Portfolio]
-type: "design_portfolio"
----
